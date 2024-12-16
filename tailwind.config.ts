@@ -17,6 +17,10 @@ export default {
         lightOrange: "#DDA15E",
         darkOrange: "#BC6C25",
       },
+      backgroundImage: {
+        render1: "url('/render1.jpg')",
+        render1_mobile: "url('/render1_mobile.jpg')",
+      },
     },
   },
   plugins: [],
