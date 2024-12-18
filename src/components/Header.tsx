@@ -6,19 +6,19 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed w-full z-10">
+    <header className=" fixed top-0 left-0 w-full z-30 bg-opacity-90">
       <div
-        className={`px-8 py-4 flex justify-between items-center w-full bg-opacity-90 ${
-          isMenuOpen ? "bg-darkGreen" : "bg-transparent"
+        className={`md:px-8 py-4 flex justify-between items-center w-full  ${
+          isMenuOpen ? "bg-lightGreen" : "bg-transparent"
         }`}
       >
-        <div className="flex items-center w-1/6">
-          <Link href="/">
+        <div className="flex items-center w-56">
+          <Link href="#home">
             <img src="/logo.png" alt="Logo" className="h-16 w-16 mr-2" />
           </Link>
         </div>
 
-        <nav className="hidden md:flex justify-center space-x-16 text-xl w-dvw">
+        <nav className="hidden md:flex justify-center space-x-14 text-xl w-dvw">
           <Link href="/" className="block text-white hover:text-lightOrange">
             O inwestycji
           </Link>
@@ -33,7 +33,7 @@ export default function Header() {
           </Link>
         </nav>
         <div className="w-1/6 flex justify-end">
-          <nav className=" max-md:hidden text-xl bg-darkOrange p-3 rounded-xl w-40 text-center hover:bg-lightGreen">
+          <nav className=" max-md:hidden text-xl bg-darkOrange p-3 rounded-2xl w-40 text-center hover:bg-darkGreen">
             <Link href="/" className="block text-white w-full">
               Kontakt
             </Link>
@@ -62,41 +62,41 @@ export default function Header() {
       </div>
 
       {isMenuOpen && (
-        <div className="md:hidden flex flex-col items-center pt-4  bg-darkGreen bg-opacity-90 shadow-md">
+        <div className="fixed inset-0 flex flex-col items-center top-24 pt-4 bg-lightGreen  shadow-md z-30 w-screen h-2/5">
           <Link
             href="/"
-            className="text-white text-xl w-full p-5 flex justify-center hover:bg-lightGreen"
+            className="text-white text-xl w-full py-5 flex justify-center hover:bg-darkGreen "
             onClick={() => setIsMenuOpen(false)}
           >
-            O inwestycji
+            <p className="break-words max-w-full">O inwestycji</p>
           </Link>
           <Link
             href="/"
-            className="text-white text-xl w-full p-5 flex justify-center hover:bg-lightGreen"
+            className="text-white text-xl w-full py-5 flex justify-center hover:bg-darkGreen break-words max-w-full"
             onClick={() => setIsMenuOpen(false)}
           >
-            Profity
+            <p className="break-words max-w-full">Profity</p>
           </Link>
           <Link
             href="/"
-            className="text-white text-xl w-full p-5 flex justify-center hover:bg-lightGreen"
+            className="text-white text-xl w-full py-5 flex justify-center hover:bg-darkGreen break-words max-w-full"
             onClick={() => setIsMenuOpen(false)}
           >
-            Domy
+            <p className="break-words max-w-full">Domy</p>
           </Link>
           <Link
             href="/"
-            className="text-white text-xl w-full p-5 flex justify-center hover:bg-lightGreen"
+            className="text-white text-xl w-full py-5 flex justify-center hover:bg-darkGreen break-words max-w-full"
             onClick={() => setIsMenuOpen(false)}
           >
-            Galeria
+            <p className="break-words max-w-full">Galeria</p>
           </Link>
           <Link
             href="/"
-            className="text-white text-xl w-full p-5 flex justify-center hover:bg-lightGreen"
+            className="text-white text-xl w-full py-5 flex justify-center hover:bg-darkGreen break-words max-w-full"
             onClick={() => setIsMenuOpen(false)}
           >
-            Kontakt
+            <p className="break-words max-w-full">Kontakt</p>
           </Link>
         </div>
       )}
