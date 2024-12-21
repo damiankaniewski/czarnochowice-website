@@ -27,7 +27,7 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 w-full z-30 ${
         isScrolled ? "bg-green2" : "bg-transparent"
-      } bg-opacity-90 transition-colors duration-300`}
+      }  transition-colors duration-300`}
     >
       <div
         className={`md:px-8 py-4 flex justify-between items-center w-full ${
