@@ -21,6 +21,9 @@ export default {
         render1: "url('/render1.jpg')",
         render1_mobile: "url('/render1_mobile.jpg')",
       },
+      width: {
+        "3/10": "30%",
+      },
     },
   },
   plugins: [],
