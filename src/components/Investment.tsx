@@ -193,7 +193,7 @@ export default function Investment() {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row items-center justify-center w-full p-10 relative">
+      <div className="flex flex-col md:flex-row items-center justify-center w-full px-10 pt-10 relative">
         <div className="relative md:absolute md:w-1/3 md:-left-0 md: ml-32 flex justify-center items-center -mt-20 md:mt-0">
           <Image
             src="/render4.jpg"

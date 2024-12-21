@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import HomeSection from "@/components/HomeSection";
 import Investment from "@/components/Investment";
+import Profits from "@/components/Profits";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <Header />
         <HomeSection />
         <Investment />
+        <Profits />
       </div>
     </div>
   );

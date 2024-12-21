@@ -47,13 +47,13 @@ export default function Header() {
           >
             O inwestycji
           </Link>
-          <Link href="/" className="block text-white hover:text-green1">
+          <Link href="#profits" className="block text-white hover:text-green1">
             Profity
           </Link>
-          <Link href="/" className="block text-white hover:text-green1">
+          <Link href="#houses" className="block text-white hover:text-green1">
             Domy
           </Link>
-          <Link href="/" className="block text-white hover:text-green1">
+          <Link href="#gallery" className="block text-white hover:text-green1">
             Galeria
           </Link>
         </nav>
@@ -63,7 +63,7 @@ export default function Header() {
               isScrolled ? "bg-green2" : ""
             }`}
           >
-            <Link href="/" className={"block text-white w-full"}>
+            <Link href="#contact" className={"block text-white w-full"}>
               Kontakt
             </Link>
           </nav>
@@ -93,35 +93,35 @@ export default function Header() {
       {isMenuOpen && (
         <div className="fixed inset-0 flex flex-col items-center top-24 pt-4 bg-green3  shadow-md z-30 w-screen h-2/5">
           <Link
-            href="/"
+            href="#investment"
             className="text-white text-xl w-full py-5 flex justify-center hover:bg-green2 "
             onClick={() => setIsMenuOpen(false)}
           >
             <p className="break-words max-w-full">O inwestycji</p>
           </Link>
           <Link
-            href="/"
+            href="#profits"
             className="text-white text-xl w-full py-5 flex justify-center hover:bg-green2 break-words max-w-full"
             onClick={() => setIsMenuOpen(false)}
           >
             <p className="break-words max-w-full">Profity</p>
           </Link>
           <Link
-            href="/"
+            href="#houses"
             className="text-white text-xl w-full py-5 flex justify-center hover:bg-green2 break-words max-w-full"
             onClick={() => setIsMenuOpen(false)}
           >
             <p className="break-words max-w-full">Domy</p>
           </Link>
           <Link
-            href="/"
+            href="#gallery"
             className="text-white text-xl w-full py-5 flex justify-center hover:bg-green2 break-words max-w-full"
             onClick={() => setIsMenuOpen(false)}
           >
             <p className="break-words max-w-full">Galeria</p>
           </Link>
           <Link
-            href="/"
+            href="#contact"
             className="text-white text-xl w-full py-5 flex justify-center hover:bg-green2 break-words max-w-full"
             onClick={() => setIsMenuOpen(false)}
           >
