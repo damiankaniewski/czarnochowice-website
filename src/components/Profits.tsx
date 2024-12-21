@@ -15,7 +15,7 @@ export default function Profits() {
     >
       <div>
         <p className="text-6xl text-green4 pt-10 font-bold break-words max-w-full">
-          Profity
+          PROFITY
         </p>
       </div>
       <div className="flex w-full h-full flex-col p-10">
