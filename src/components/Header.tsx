@@ -26,12 +26,12 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-30 ${
-        isScrolled ? "bg-green2" : "bg-transparent"
+        isScrolled ? "bg-green3" : "bg-transparent"
       }  transition-colors duration-300`}
     >
       <div
         className={`md:px-8 py-4 flex justify-between items-center w-full ${
-          isMenuOpen ? "bg-green2" : ""
+          isMenuOpen ? "bg-green3" : ""
         }`}
       >
         <div className="flex items-center w-56">
@@ -59,8 +59,8 @@ export default function Header() {
         </nav>
         <div className="w-1/6 flex justify-end">
           <nav
-            className={`max-md:hidden text-xl bg-green2 p-3 rounded-2xl w-40 text-center hover:bg-green4 ${
-              isScrolled ? "bg-green4" : ""
+            className={`max-md:hidden text-xl bg-green2 p-3 rounded-2xl w-40 text-center hover:bg-green1 ${
+              isScrolled ? "bg-green2" : ""
             }`}
           >
             <Link href="/" className={"block text-white w-full"}>
@@ -91,38 +91,38 @@ export default function Header() {
       </div>
 
       {isMenuOpen && (
-        <div className="fixed inset-0 flex flex-col items-center top-24 pt-4 bg-green2  shadow-md z-30 w-screen h-3/5">
+        <div className="fixed inset-0 flex flex-col items-center top-24 pt-4 bg-green3  shadow-md z-30 w-screen h-2/5">
           <Link
             href="/"
-            className="text-white text-xl w-full py-5 flex justify-center hover:bg-green4 "
+            className="text-white text-xl w-full py-5 flex justify-center hover:bg-green2 "
             onClick={() => setIsMenuOpen(false)}
           >
             <p className="break-words max-w-full">O inwestycji</p>
           </Link>
           <Link
             href="/"
-            className="text-white text-xl w-full py-5 flex justify-center hover:bg-green4 break-words max-w-full"
+            className="text-white text-xl w-full py-5 flex justify-center hover:bg-green2 break-words max-w-full"
             onClick={() => setIsMenuOpen(false)}
           >
             <p className="break-words max-w-full">Profity</p>
           </Link>
           <Link
             href="/"
-            className="text-white text-xl w-full py-5 flex justify-center hover:bg-green4 break-words max-w-full"
+            className="text-white text-xl w-full py-5 flex justify-center hover:bg-green2 break-words max-w-full"
             onClick={() => setIsMenuOpen(false)}
           >
             <p className="break-words max-w-full">Domy</p>
           </Link>
           <Link
             href="/"
-            className="text-white text-xl w-full py-5 flex justify-center hover:bg-green4 break-words max-w-full"
+            className="text-white text-xl w-full py-5 flex justify-center hover:bg-green2 break-words max-w-full"
             onClick={() => setIsMenuOpen(false)}
           >
             <p className="break-words max-w-full">Galeria</p>
           </Link>
           <Link
             href="/"
-            className="text-white text-xl w-full py-5 flex justify-center hover:bg-green4 break-words max-w-full"
+            className="text-white text-xl w-full py-5 flex justify-center hover:bg-green2 break-words max-w-full"
             onClick={() => setIsMenuOpen(false)}
           >
             <p className="break-words max-w-full">Kontakt</p>

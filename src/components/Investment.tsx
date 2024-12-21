@@ -13,7 +13,7 @@ export default function Investment() {
         </p>
       </div>
       <div className="flex flex-col md:flex-row items-center justify-center w-full p-10 relative">
-        <div className="bg-[#50643f] rounded-lg overflow-hidden shadow-lg flex flex-col md:flex-row w-full md:w-4/5">
+        <div className="bg-green2 rounded-lg overflow-hidden shadow-lg flex flex-col md:flex-row w-full md:w-4/5">
           <div className="p-8 md:w-3/5 text-white">
             <h2 className="text-2xl font-bold mb-6">Lokalizacja inwestycji</h2>
             <p className="text-lg mb-6">
@@ -47,7 +47,7 @@ export default function Investment() {
 
             <div className="flex justify-center">
               <button
-                className="bg-[#f08a00] text-white px-6 py-3 rounded-md hover:bg-[#d97800] transition"
+                className="bg-green4 text-white px-6 py-3 rounded-md hover:bg-green1 transition"
                 onClick={() =>
                   window.open(
                     "https://maps.app.goo.gl/jd3WxKn6J2PKWtyv9",
@@ -85,7 +85,7 @@ export default function Investment() {
             height={400}
           />
         </div>
-        <div className="bg-[#50643f] rounded-lg overflow-hidden shadow-lg flex flex-col md:flex-row w-full md:w-4/5 justify-end ">
+        <div className="bg-green2 rounded-lg overflow-hidden shadow-lg flex flex-col md:flex-row w-full md:w-4/5 justify-end ">
           <div className="p-8 md:w-3/5 text-white">
             <h2 className="text-2xl font-bold mb-6">Własność i prywatność</h2>
 
@@ -127,7 +127,7 @@ export default function Investment() {
       </div>
 
       <div className="flex flex-col md:flex-row items-center justify-center w-full p-10 relative">
-        <div className="bg-[#50643f] rounded-lg overflow-hidden shadow-lg flex flex-col md:flex-row w-full md:w-4/5">
+        <div className="bg-green2 rounded-lg overflow-hidden shadow-lg flex flex-col md:flex-row w-full md:w-4/5">
           <div className="p-8 md:w-3/5 text-white">
             <h2 className="text-2xl font-bold mb-6">
               Architektura i funkcjonalność
@@ -205,7 +205,7 @@ export default function Investment() {
             height={400}
           />
         </div>
-        <div className="bg-[#50643f] rounded-lg overflow-hidden shadow-lg flex flex-col md:flex-row w-full md:w-4/5 justify-end ">
+        <div className="bg-green2 rounded-lg overflow-hidden shadow-lg flex flex-col md:flex-row w-full md:w-4/5 justify-end ">
           <div className="p-8 md:w-3/5 text-white">
             <h2 className="text-2xl font-bold mb-6">
               Standard deweloperski Premium
