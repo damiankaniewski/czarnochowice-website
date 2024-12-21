@@ -11,15 +11,18 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        lightGreen: "#606C38",
-        darkGreen: "#283618",
-        white: "#FEFAE0",
-        lightOrange: "#DDA15E",
-        darkOrange: "#BC6C25",
+        grey: "#DAD7CD",
+        green1: "#A3B18A",
+        green2: "#588157",
+        green3: "#3A5A40",
+        green4: "#344E41",
       },
       backgroundImage: {
         render1: "url('/render1.jpg')",
         render1_mobile: "url('/render1_mobile.jpg')",
+      },
+      width: {
+        "3/10": "30%",
       },
     },
   },
