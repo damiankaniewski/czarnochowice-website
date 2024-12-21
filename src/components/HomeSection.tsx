@@ -2,7 +2,7 @@ export default function HomeSection() {
   return (
     <section
       id="home"
-      className="flex justify-center items-center w-full h-full flex-col relative z-20"
+      className="flex justify-center items-center w-full h-screen flex-col relative z-20"
     >
       <p className="text-3xl md:text-5xl text-grey font-bold mb-6 text-center break-words max-w-full">
         TWÓJ WYMARZONY DOM
