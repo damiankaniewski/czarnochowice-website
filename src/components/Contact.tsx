@@ -13,17 +13,26 @@ export default function Contact() {
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [lastSubmissionTime, setLastSubmissionTime] = useState(null);
+  const [lastSubmissionTime, setLastSubmissionTime] = useState<number | null>(
+    null
+  );
 
-  const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const target = e.target as HTMLInputElement | HTMLTextAreaElement;
+    const { name, value } = target;
+
     setFormData((prev) => ({
       ...prev,
-      [name]: type === "checkbox" ? checked : value,
+      [name]:
+        target.type === "checkbox"
+          ? (target as HTMLInputElement).checked
+          : value,
     }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
 
     if (isSubmitting) return; // Prevent double submission
