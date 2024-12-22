@@ -14,8 +14,8 @@ export default function Houses() {
           DOMY
         </p>
       </div>
-      <div className="w-full px-10 pt-10 flex flex-row ">
-        <div className="w-3/4 flex justify-end items-start relative">
+      <div className="w-full px-10 pt-10 flex flex-col md:flex-row ">
+        <div className="w-full md:w-3/4 flex justify-center md:justify-end items-start relative ">
           <div className="w-10/12 relative">
             <Image
               src="/renderZGory.jpg"
@@ -30,7 +30,7 @@ export default function Houses() {
               <Link
                 href={house.linkDoOferty}
                 key={index}
-                className="absolute flex justify-center items-center text-white bg-green4 rounded-full text-sm font-bold"
+                className="absolute flex justify-center items-center text-white bg-green2 rounded-full text-sm font-bold"
                 style={{
                   top: `${house.y}%`,
                   left: `${house.x}%`,
@@ -44,7 +44,7 @@ export default function Houses() {
             ))}
           </div>
         </div>
-        <div className="w-1/2 flex justify-center items-start">
+        <div className="w-full md:w-1/2 flex justify-center items-start pt-10 md:pt-0">
           <div className="w-3/4 flex flex-col justify-start items-center space-y-4 h-3/4 overflow-y-auto">
             {houseOffer.map((house, index) => (
               <div
@@ -72,7 +72,7 @@ export default function Houses() {
                   <p className="text-gray-600">Poziom: {house.poziom}</p>
                   <p className="text-gray-600">Ogródek: {house.ogrodek} m²</p>
                   <p className="text-gray-600 font-bold">
-                    Cena: {house.cena} PLN
+                    Cena: {house.cena} zł
                   </p>
                 </div>
                 <div>
