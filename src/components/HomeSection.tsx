@@ -1,4 +1,6 @@
-export default function HomeSection() {
+import Link from "next/link";
+
+export default function Home() {
   return (
     <section
       id="home"
@@ -11,12 +13,18 @@ export default function HomeSection() {
         W IDEALNEJ LOKALIZACJI.
       </p>
       <div className="flex max-md:flex-col max-md:space-y-5 max-md:w-full max-md:items-center md:space-x-10 mt-8">
-        <button className="py-3 w-56 max-md:w-3/5 bg-green4 text-white rounded-2xl hover:bg-green2 hover:text-white transition break-words max-w-full">
+        <Link
+          className="py-3 w-56 max-md:w-3/5 bg-green4 text-white rounded-2xl hover:bg-green2 hover:text-white transition break-words max-w-full text-center"
+          href="#houses"
+        >
           Zobacz ofertę
-        </button>
-        <button className="py-3 w-56 max-md:w-3/5 bg-green4 text-white rounded-2xl hover:bg-green2 hover:text-white transition break-words max-w-full">
+        </Link>
+        <Link
+          className="py-3 w-56 max-md:w-3/5 bg-green4 text-white rounded-2xl hover:bg-green2 hover:text-white transition break-words max-w-full text-center"
+          href="#contact"
+        >
           Skontaktuj się
-        </button>
+        </Link>
       </div>
     </section>
   );
