@@ -8,6 +8,8 @@ const houseOffer = [
     cena: 598519,
     poziom: "parter",
     ogrodek: 38.41,
+    x: 38,
+    y: 19,
   },
   {
     numer: "8a",
@@ -18,6 +20,8 @@ const houseOffer = [
     cena: 598519,
     poziom: "parter",
     ogrodek: 38.41,
+    x: 40,
+    y: 25,
   },
   {
     numer: "9a",
@@ -28,6 +32,8 @@ const houseOffer = [
     cena: 598519,
     poziom: "parter",
     ogrodek: 38.41,
+    x: 50,
+    y: 40,
   },
   {
     numer: "10a",
@@ -38,6 +44,8 @@ const houseOffer = [
     cena: 598519,
     poziom: "parter",
     ogrodek: 38.41,
+    x: 55,
+    y: 50,
   },
 ];
 
