@@ -24,6 +24,9 @@ export default {
       width: {
         "3/10": "30%",
       },
+      height: {
+        "80vh": "80vh",
+      },
     },
   },
   plugins: [],
