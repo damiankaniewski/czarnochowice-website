@@ -5,6 +5,7 @@ import Profits from "@/components/Profits";
 import Houses from "@/components/Houses";
 import Gallery from "@/components/Gallery";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Houses />
         <Gallery />
         <Contact />
+        <Footer />
       </div>
     </div>
   );
