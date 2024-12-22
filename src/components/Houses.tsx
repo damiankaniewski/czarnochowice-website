@@ -7,16 +7,16 @@ export default function Houses() {
   return (
     <section
       id="houses"
-      className="w-full h-full flex flex-col items-center bg-grey relative scroll-mt-20"
+      className="w-full flex flex-col items-center bg-grey relative scroll-mt-20"
     >
       <div>
         <p className="text-6xl text-green4 pt-10 font-bold break-words max-w-full">
           DOMY
         </p>
       </div>
-      <div className="w-full px-10 pt-10 flex flex-col md:flex-row ">
+      <div className="w-full px-10 pt-10 flex flex-col md:flex-row h-80vh">
         <div className="w-full md:w-3/4 flex justify-center md:justify-end items-start relative ">
-          <div className="w-10/12 relative">
+          <div className="w-11/12 relative">
             <Image
               src="/renderZGory.jpg"
               alt="Estate"
@@ -45,7 +45,7 @@ export default function Houses() {
           </div>
         </div>
         <div className="w-full md:w-1/2 flex justify-center items-start pt-10 md:pt-0">
-          <div className="w-3/4 flex flex-col justify-start items-center space-y-4 h-3/4 overflow-y-auto">
+          <div className="w-3/4 flex flex-col justify-start items-center space-y-4 h-full overflow-y-auto">
             {houseOffer.map((house, index) => (
               <div
                 key={index}
