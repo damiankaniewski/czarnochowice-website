@@ -23,9 +23,11 @@ export default {
       },
       width: {
         "3/10": "30%",
+        "160": "40rem",
       },
       height: {
         "80vh": "80vh",
+        "112": "28rem",
       },
     },
   },
