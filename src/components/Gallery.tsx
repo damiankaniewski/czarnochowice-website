@@ -23,12 +23,7 @@ export default function Gallery() {
       id="gallery"
       className="w-full h-full flex flex-col items-center bg-grey relative scroll-mt-20"
     >
-      <div>
-        <p className="text-6xl text-green4 pt-10 font-bold break-words max-w-full">
-          GALERIA
-        </p>
-      </div>
-      <div className="w-full px-10 py-10 flex justify-center items-center relative overflow-hidden">
+      <div className="w-full px-10 py-10 flex justify-center items-center relative overflow-hidden ">
         <button
           onClick={goToPrevious}
           className="absolute left-2 bg-green2 text-white p-4 rounded-full shadow-lg hover:bg-green3 focus:outline-none z-10 transition-all duration-300 ease-in-out"
@@ -36,7 +31,7 @@ export default function Gallery() {
           &lt;
         </button>
 
-        <div className="w-full md:w-1/2 h-auto overflow-hidden relative">
+        <div className="w-full md:w-3/5 h-auto overflow-hidden relative">
           <div
             className="flex transition-transform duration-700 ease-in-out"
             style={{
