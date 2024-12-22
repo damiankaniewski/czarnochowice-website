@@ -4,6 +4,7 @@ import Investment from "@/components/Investment";
 import Profits from "@/components/Profits";
 import Houses from "@/components/Houses";
 import Gallery from "@/components/Gallery";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Profits />
         <Houses />
         <Gallery />
+        <Contact />
       </div>
     </div>
   );
