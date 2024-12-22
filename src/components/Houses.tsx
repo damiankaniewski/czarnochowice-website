@@ -44,8 +44,8 @@ export default function Houses() {
             ))}
           </div>
         </div>
-        <div className="w-full md:w-1/2 flex justify-center items-start pt-10 md:pt-0">
-          <div className="w-3/4 flex flex-col justify-start items-center space-y-4 h-full overflow-y-auto">
+        <div className="w-full h-full md:w-1/2 flex justify-center items-start pt-10 md:pt-0">
+          <div className="w-3/4  flex flex-col justify-start items-center space-y-4 h-full overflow-y-auto">
             {houseOffer.map((house, index) => (
               <div
                 key={index}
