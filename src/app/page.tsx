@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import HomeSection from "@/components/HomeSection";
 import Investment from "@/components/Investment";
 import Profits from "@/components/Profits";
+import Houses from "@/components/Houses";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <HomeSection />
         <Investment />
         <Profits />
+        <Houses />
       </div>
     </div>
   );
