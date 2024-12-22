@@ -102,7 +102,7 @@ export default function Contact() {
       <div className="w-3/4 text-center">
         <div>
           <p className="text-6xl text-green4 font-bold break-words max-w-full">
-            DOMY
+            KONTAKT
           </p>
         </div>
         <p className="text-3xl font-bold text-green2 pt-3">
