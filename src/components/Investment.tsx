@@ -14,7 +14,7 @@ export default function Investment() {
       </div>
       <div className="flex flex-col md:flex-row items-center justify-center w-full p-10 relative">
         <div className="bg-green2 rounded-lg overflow-hidden shadow-lg flex flex-col md:flex-row w-full md:w-4/5">
-          <div className="p-8 md:w-3/5 text-white">
+          <div className="p-8 md:w-3/5 text-white" data-aos="fade-right">
             <h2 className="text-2xl font-bold mb-6">Lokalizacja inwestycji</h2>
             <p className="text-lg mb-6">
               Inwestycja położona jest w doskonałej lokalizacji, zapewniając
@@ -62,6 +62,7 @@ export default function Investment() {
         </div>
         <div className="relative md:absolute md:w-1/3 md:-right-0 md: mr-32 flex justify-center items-center -mt-20 md:mt-0">
           <Image
+            data-aos="fade-left"
             src="/render1.jpg"
             alt="Modern houses"
             layout="responsive"
@@ -83,10 +84,11 @@ export default function Investment() {
             className="rounded-lg shadow-lg w-full"
             width={533}
             height={400}
+            data-aos="fade-right"
           />
         </div>
         <div className="bg-green2 rounded-lg overflow-hidden shadow-lg flex flex-col md:flex-row w-full md:w-4/5 justify-end ">
-          <div className="p-8 md:w-3/5 text-white">
+          <div className="p-8 md:w-3/5 text-white" data-aos="fade-left">
             <h2 className="text-2xl font-bold mb-6">Własność i prywatność</h2>
 
             <div className="mb-6">
@@ -128,7 +130,7 @@ export default function Investment() {
 
       <div className="flex flex-col md:flex-row items-center justify-center w-full p-10 relative">
         <div className="bg-green2 rounded-lg overflow-hidden shadow-lg flex flex-col md:flex-row w-full md:w-4/5">
-          <div className="p-8 md:w-3/5 text-white">
+          <div className="p-8 md:w-3/5 text-white" data-aos="fade-right">
             <h2 className="text-2xl font-bold mb-6">
               Architektura i funkcjonalność
             </h2>
@@ -189,6 +191,7 @@ export default function Investment() {
             className="rounded-lg shadow-lg w-full"
             width={533}
             height={400}
+            data-aos="fade-left"
           />
         </div>
       </div>
@@ -203,10 +206,11 @@ export default function Investment() {
             className="rounded-lg shadow-lg w-full"
             width={533}
             height={400}
+            data-aos="fade-right"
           />
         </div>
         <div className="bg-green2 rounded-lg overflow-hidden shadow-lg flex flex-col md:flex-row w-full md:w-4/5 justify-end ">
-          <div className="p-8 md:w-3/5 text-white">
+          <div className="p-8 md:w-3/5 text-white" data-aos="fade-left">
             <h2 className="text-2xl font-bold mb-6">
               Standard deweloperski Premium
             </h2>

@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import galleryImages from "@/config/galleryImages";
 
@@ -17,11 +17,20 @@ export default function Gallery() {
       prevIndex === galleryImages.length - 1 ? 0 : prevIndex + 1
     );
   };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === galleryImages.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section
       id="gallery"
-      className="w-full h-full flex flex-col items-center bg-grey relative scroll-mt-20"
+      className="w-full h-full flex flex-col items-center bg-grey relative scroll-mt-16"
     >
       <div className="w-full px-10 pt-10 flex justify-center items-center relative overflow-hidden ">
         <button
@@ -39,13 +48,18 @@ export default function Gallery() {
             }}
           >
             {galleryImages.map((image, index) => (
-              <div key={index} className="w-full flex-shrink-0">
+              <div
+                key={index}
+                className={`w-full flex-shrink-0 transition-opacity duration-700 ${
+                  index === currentIndex ? "opacity-100" : "opacity-0"
+                } flex justify-center items-center`}
+              >
                 <Image
                   src={image.src}
                   alt={image.alt}
                   layout="responsive"
                   objectFit="cover"
-                  width={1200}
+                  width={1000}
                   height={800}
                   className="rounded-lg shadow-xl"
                 />
@@ -60,6 +74,17 @@ export default function Gallery() {
         >
           &gt;
         </button>
+      </div>
+      <div className="flex justify-center items-center mt-3 space-x-2">
+        {galleryImages.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentIndex(index)}
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              currentIndex === index ? "bg-green2" : "bg-gray-400"
+            }`}
+          />
+        ))}
       </div>
     </section>
   );
