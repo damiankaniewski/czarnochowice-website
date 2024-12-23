@@ -43,18 +43,27 @@ export default function Header() {
         <nav className="hidden md:flex justify-center space-x-14 text-xl w-dvw">
           <Link
             href="#investment"
-            className="block text-white hover:text-green1"
+            className="block text-white hover:text-green1 hover:font-bold"
           >
-            O inwestycji
+            O INWESTYCJI
           </Link>
-          <Link href="#profits" className="block text-white hover:text-green1">
-            Profity
+          <Link
+            href="#profits"
+            className="block text-white hover:text-green1 hover:font-bold"
+          >
+            PROFITY
           </Link>
-          <Link href="#houses" className="block text-white hover:text-green1">
-            Domy
+          <Link
+            href="#houses"
+            className="block text-white hover:text-green1 hover:font-bold"
+          >
+            DOMY
           </Link>
-          <Link href="#gallery" className="block text-white hover:text-green1">
-            Galeria
+          <Link
+            href="#gallery"
+            className="block text-white hover:text-green1 hover:font-bold"
+          >
+            GALERIA
           </Link>
         </nav>
         <div className="w-1/6 flex justify-end">
@@ -64,7 +73,7 @@ export default function Header() {
             }`}
           >
             <Link href="#contact" className={"block text-white w-full"}>
-              Kontakt
+              KONTAKT
             </Link>
           </nav>
         </div>
