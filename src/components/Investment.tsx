@@ -8,7 +8,10 @@ export default function Investment() {
       className="w-full h-full flex flex-col items-center bg-grey relative scroll-mt-20"
     >
       <div>
-        <p className="text-6xl text-green4 pt-10 font-bold break-words max-w-full">
+        <p
+          className="text-6xl text-green4 pt-10 font-bold break-words max-w-full"
+          data-aos="zoom-in"
+        >
           O INWESTYCJI
         </p>
       </div>
