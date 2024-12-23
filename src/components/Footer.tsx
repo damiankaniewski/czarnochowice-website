@@ -21,7 +21,12 @@ export default function Footer() {
                 className="p-2"
               />
             </Link>
-            <Link href="https://www.n20.pl/" className="p-2">
+            <Link
+              href="https://www.n20.pl/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2"
+            >
               <Image
                 src="/logo.png"
                 alt="N20"
@@ -35,6 +40,8 @@ export default function Footer() {
             <div className="flex flex-row h-full w-full">
               <Link
                 href="https://www.facebook.com/N20RealEstate"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-2"
               >
                 <Image
@@ -46,6 +53,8 @@ export default function Footer() {
               </Link>
               <Link
                 href="https://www.instagram.com/n20_nieruchomosci?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-2"
               >
                 <Image
@@ -58,6 +67,8 @@ export default function Footer() {
             </div>
             <Link
               href="https://www.n20.pl/polityka-prywatnosci"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full h-full p-2 text-center text-lg mt-5"
             >
               Polityka Prywatności
