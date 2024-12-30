@@ -40,7 +40,7 @@ export default function Header() {
           </Link>
         </div>
 
-        <nav className="hidden md:flex justify-center space-x-14 text-xl w-dvw">
+        <nav className="hidden md:flex justify-center space-x-14 md:text-lg lg:text-xl w-dvw items-center">
           <Link
             href="#investment"
             className="block text-white hover:text-green1 hover:font-bold"
@@ -68,7 +68,7 @@ export default function Header() {
         </nav>
         <div className="w-1/6 flex justify-end">
           <nav
-            className={`max-md:hidden text-xl bg-green2 p-3 rounded-2xl w-40 text-center hover:bg-green1 ${
+            className={`max-md:hidden md:text-lg lg:text-xl bg-green2 p-3  rounded-2xl w-40 text-center hover:bg-green1 ${
               isScrolled ? "bg-green2" : ""
             }`}
           >
