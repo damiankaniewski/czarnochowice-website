@@ -12,7 +12,7 @@ export default function Investment() {
           O INWESTYCJI
         </p>
       </div>
-      <div className="flex flex-col lg:flex-row items-center justify-center pt-4 p-2 w-full sm:px-10 gap-2 relative">
+      <div className="flex flex-col lg:flex-row items-center justify-center pt-4 p-2 sm:px-10 gap-2 relative max-w-[1722px]">
         <div className="lg:hidden relative  flex justify-center items-center overflow-hidden">
           <Image
             data-aos="fade-left"
@@ -87,7 +87,7 @@ export default function Investment() {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row items-center justify-center w-full p-2 sm:px-10 gap-2 relative">
+      <div className="flex flex-col lg:flex-row items-center justify-center p-2 sm:px-10 gap-2 relative max-w-[1722px]">
         <div className="lg:hidden relative flex justify-center items-center overflow-hidden">
           <Image
             data-aos="fade-right"
@@ -101,7 +101,7 @@ export default function Investment() {
           />
         </div>
 
-        <div className=" max-lg:hidden max-w-[551px] max-h-[413px] relative md:absolute md:w-3/10 lg:-left-0 lg:ml-32 flex justify-center items-center -mt-20 md:mt-0">
+        <div className=" max-lg:hidden max-w-[450px] max-h-[413px] relative md:absolute md:w-3/10 lg:-left-0 lg:ml-32 flex justify-center items-center -mt-20 md:mt-0">
           <Image
             src="/render2.jpg"
             alt="Modern houses"
@@ -155,7 +155,7 @@ export default function Investment() {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row items-center justify-center w-full p-2 sm:px-10 gap-2 relative">
+      <div className="flex flex-col lg:flex-row items-center justify-center p-2 sm:px-10 gap-2 relative max-w-[1722px]">
         <div className="lg:hidden relative flex justify-center items-center overflow-hidden">
           <Image
             data-aos="fade-left"
@@ -235,7 +235,7 @@ export default function Investment() {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row items-center justify-center w-full p-2 sm:px-10 sm:pb-10 gap-2 relative">
+      <div className="flex flex-col lg:flex-row items-center justify-center p-2 sm:px-10 sm:pb-10 gap-2 relative max-w-[1722px]">
         <div className="max-lg:hidden max-w-[551px] max-h-[413px] relative md:absolute md:w-3/10 lg:-left-0 lg:ml-32 flex justify-center items-center -mt-20 md:mt-0">
           <Image
             src="/render3.jpg"
