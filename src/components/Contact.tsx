@@ -101,7 +101,7 @@ export default function Contact() {
     >
       <div className="max-w-screen-xl w-full text-center">
         <div>
-          <p className="text-4xl md:text-6xl text-green4 font-bold break-words max-w-full">
+          <p className="text-3xl sm:text-4xl lg:text-6xl text-green4 font-bold break-words max-w-full">
             KONTAKT
           </p>
         </div>
