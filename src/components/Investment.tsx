@@ -13,7 +13,7 @@ export default function Investment() {
         </p>
       </div>
       <div className="flex flex-col lg:flex-row items-center justify-center w-full p-4 sm:px-10 gap-2 relative">
-        <div className="lg:hidden relative flex justify-center items-center">
+        <div className="lg:hidden relative flex justify-center items-center overflow-hidden">
           <Image
             data-aos="fade-left"
             src="/render1.jpg"
@@ -88,7 +88,7 @@ export default function Investment() {
       </div>
 
       <div className="flex flex-col lg:flex-row items-center justify-center w-full p-4 sm:px-10 gap-2 relative">
-        <div className="lg:hidden relative flex justify-center items-center">
+        <div className="lg:hidden relative flex justify-center items-center overflow-hidden">
           <Image
             data-aos="fade-right"
             src="/render2.jpg"
@@ -156,10 +156,10 @@ export default function Investment() {
       </div>
 
       <div className="flex flex-col lg:flex-row items-center justify-center w-full p-4 sm:px-10 gap-2 relative">
-        <div className="lg:hidden relative flex justify-center items-center">
+        <div className="lg:hidden relative flex justify-center items-center overflow-hidden">
           <Image
             data-aos="fade-left"
-            src="/render3.jpg"
+            src="/render4.jpg"
             alt="Modern houses"
             layout="responsive"
             objectFit="cover"
@@ -223,7 +223,7 @@ export default function Investment() {
         </div>
         <div className="max-lg:hidden relative md:absolute md:w-1/3 md:-right-0 lg:mr-32 flex justify-center items-center -mt-20 md:mt-0">
           <Image
-            src="/render3.jpg"
+            src="/render4.jpg"
             alt="Modern houses"
             layout="responsive"
             objectFit="cover"
@@ -238,7 +238,7 @@ export default function Investment() {
       <div className="flex flex-col lg:flex-row items-center justify-center w-full p-4 sm:px-10 sm:pb-10 gap-2 relative">
         <div className="max-lg:hidden relative md:absolute md:w-3/10 lg:-left-0 lg:ml-32 flex justify-center items-center -mt-20 md:mt-0">
           <Image
-            src="/render4.jpg"
+            src="/render3.jpg"
             alt="Modern houses"
             layout="responsive"
             objectFit="cover"
@@ -248,10 +248,10 @@ export default function Investment() {
             data-aos="fade-right"
           />
         </div>
-        <div className="lg:hidden relative flex justify-center items-center">
+        <div className="lg:hidden relative flex justify-center items-center overflow-hidden">
           <Image
             data-aos="fade-right"
-            src="/render4.jpg"
+            src="/render3.jpg"
             alt="Modern houses"
             layout="responsive"
             objectFit="cover"
