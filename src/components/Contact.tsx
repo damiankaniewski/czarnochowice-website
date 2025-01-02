@@ -112,7 +112,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 w-full">
           <div className="w-full flex items-stretch">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194.777323362113!2d20.137808876927075!3d50.014469518658906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471646d96c0c9cf5%3A0xd9655f478a456d52!2sBrzozowa%2C%2032-003%20Zakrz%C3%B3w!5e1!3m2!1spl!2spl!4v1734886297634!5m2!1spl!2spl"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3194.8443747714277!2d20.140027999999997!3d50.013461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTDCsDAwJzQ4LjUiTiAyMMKwMDgnMjQuMSJF!5e1!3m2!1spl!2spl!4v1735824868741!5m2!1spl!2spl"
               frameBorder="0"
               className="w-full h-full rounded-lg shadow-lg"
             ></iframe>

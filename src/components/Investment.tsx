@@ -63,7 +63,7 @@ export default function Investment() {
                 className="bg-green4 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-md hover:bg-green1 transition"
                 onClick={() =>
                   window.open(
-                    "https://maps.app.goo.gl/jd3WxKn6J2PKWtyv9",
+                    "https://maps.app.goo.gl/KssHA4FVSg5khjQi8",
                     "_blank"
                   )
                 }
