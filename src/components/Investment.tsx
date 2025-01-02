@@ -1,7 +1,15 @@
 "use client";
 import Image from "next/image";
+import { useState } from "react";
+import { FaMoon, FaSun } from "react-icons/fa6";
 
 export default function Investment() {
+  const [isDay, setIsDay] = useState(true);
+
+  const toggleImage = () => {
+    setIsDay(!isDay);
+  };
+
   return (
     <section
       id="investment"
@@ -13,17 +21,28 @@ export default function Investment() {
         </p>
       </div>
       <div className="flex flex-col lg:flex-row items-center justify-center pt-4 p-2 sm:px-10 gap-2 relative max-w-[1722px]">
-        <div className="lg:hidden relative  flex justify-center items-center overflow-hidden">
+        <div
+          className="lg:hidden relative  flex justify-center items-center overflow-hidden"
+          data-aos="fade-left"
+        >
           <Image
-            data-aos="fade-left"
-            src="/render1.jpg"
-            alt="Modern houses"
+            src={isDay ? "/render1.jpg" : "/render1_noc.jpg"}
+            alt={isDay ? "Modern houses - day" : "Modern houses - night"}
             layout="responsive"
             objectFit="cover"
             className="rounded-lg shadow-lg "
             width={533}
             height={400}
           />
+          <button
+            className={`absolute bottom-4 w-1/5 bg-opacity-75 text-white px-4 py-2 rounded-md ${
+              isDay ? "bg-green2" : "bg-green4"
+            } transition-all duration-300 flex flex-row items-center justify-center gap-2`}
+            onClick={toggleImage}
+          >
+            {isDay ? <FaSun /> : <FaMoon />}
+            {isDay ? "Dzień" : "Noc"}
+          </button>
         </div>
         <div className="bg-green2 rounded-lg overflow-hidden shadow-lg flex flex-col md:flex-row w-full lg:w-4/5">
           <div className="p-6 sm:p-8 lg:w-3/5 text-white" data-aos="fade-right">
@@ -63,7 +82,7 @@ export default function Investment() {
                 className="bg-green4 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-md hover:bg-green1 transition"
                 onClick={() =>
                   window.open(
-                    "https://maps.app.goo.gl/jd3WxKn6J2PKWtyv9",
+                    "https://maps.app.goo.gl/KssHA4FVSg5khjQi8",
                     "_blank"
                   )
                 }
@@ -73,17 +92,28 @@ export default function Investment() {
             </div>
           </div>
         </div>
-        <div className="max-lg:hidden relative md:absolute md:w-1/3 max-w-[551px] max-h-[413px] md:-right-0 lg:mr-32 flex justify-center items-center -mt-20 md:mt-0">
+        <div
+          className="max-lg:hidden relative md:absolute md:w-1/3 max-w-[551px] max-h-[413px] md:-right-0 lg:mr-32 flex justify-center items-center -mt-20 md:mt-0"
+          data-aos="fade-left"
+        >
           <Image
-            data-aos="fade-left"
-            src="/render1.jpg"
-            alt="Modern houses"
+            src={isDay ? "/render1.jpg" : "/render1_noc.jpg"}
+            alt={isDay ? "Modern houses - day" : "Modern houses - night"}
             layout="responsive"
             objectFit="contain"
             className="rounded-lg shadow-lg "
             width={533}
             height={400}
           />
+          <button
+            className={`absolute bottom-4 w-1/5 bg-opacity-75 text-white px-4 py-2 rounded-md ${
+              isDay ? "bg-green2" : "bg-green4"
+            } transition-all duration-300 flex flex-row items-center justify-center gap-2`}
+            onClick={toggleImage}
+          >
+            {isDay ? <FaSun /> : <FaMoon />}
+            {isDay ? "Dzień" : "Noc"}
+          </button>
         </div>
       </div>
 
