@@ -35,7 +35,7 @@ export default function Header() {
         }`}
       >
         <div
-          className="flex items-center w-56"
+          className="flex items-center w-56 pl-4"
           data-aos="zoom-out"
           data-aos-duration="1000"
         >
@@ -51,25 +51,25 @@ export default function Header() {
         >
           <Link
             href="#investment"
-            className="block text-white hover:text-green1 hover:font-bold"
+            className="block text-white hover:text-green1 font-bold"
           >
             O INWESTYCJI
           </Link>
           <Link
             href="#profits"
-            className="block text-white hover:text-green1 hover:font-bold"
+            className="block text-white hover:text-green1 font-bold"
           >
             PROFITY
           </Link>
           <Link
             href="#houses"
-            className="block text-white hover:text-green1 hover:font-bold"
+            className="block text-white hover:text-green1 font-bold"
           >
             DOMY
           </Link>
           <Link
             href="#gallery"
-            className="block text-white hover:text-green1 hover:font-bold"
+            className="block text-white hover:text-green1 font-bold"
           >
             GALERIA
           </Link>
@@ -84,14 +84,17 @@ export default function Header() {
               isScrolled ? "bg-green2" : ""
             }`}
           >
-            <Link href="#contact" className={"block text-white w-full"}>
+            <Link
+              href="#contact"
+              className={"block text-white w-full font-bold"}
+            >
               KONTAKT
             </Link>
           </nav>
         </div>
 
         <button
-          className="md:hidden flex items-center text-white"
+          className="md:hidden flex items-center text-white pr-4"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           data-aos="zoom-out"
           data-aos-duration="1000"
@@ -114,7 +117,7 @@ export default function Header() {
       </div>
 
       {isMenuOpen && (
-        <div className="fixed inset-0 flex flex-col items-center top-24 pt-4 bg-green3  shadow-md z-30 w-screen h-2/5">
+        <div className="fixed flex flex-col items-center top-24 pt-4 bg-green3  shadow-md z-30 w-screen h-auto">
           <Link
             href="#investment"
             className="text-white text-xl w-full py-5 flex justify-center hover:bg-green2 "
