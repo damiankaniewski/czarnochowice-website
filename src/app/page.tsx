@@ -10,7 +10,11 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <div className=" h-full w-full">
-      <div className="bg-render1_mobile md:bg-render1 bg-cover bg-center h-screen w-full absolute opacity-60" />
+      <div
+        className="bg-render1_mobile md:bg-render1 bg-cover bg-center h-screen w-full absolute opacity-60"
+        data-aos="fade-in"
+        data-aos-duration="3000"
+      />
       <div className="h-full w-full">
         <Header />
         <HomeSection />

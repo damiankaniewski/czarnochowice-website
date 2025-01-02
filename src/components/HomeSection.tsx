@@ -9,13 +9,16 @@ export default function Home() {
       <p
         className="text-3xl md:text-5xl text-white font-bold mb-6 text-center break-words max-w-full"
         data-aos="fade-up"
+        data-aos-delay="500"
+        data-aos-duration="1000"
       >
         TWÓJ WYMARZONY DOM
       </p>
       <p
         className="text-3xl md:text-5xl text-white font-bold text-center break-words max-w-full"
         data-aos="fade-up"
-        data-aos-delay="200"
+        data-aos-delay="700"
+        data-aos-duration="1000"
       >
         W IDEALNEJ LOKALIZACJI.
       </p>
@@ -24,7 +27,8 @@ export default function Home() {
           className="py-3 w-56 max-md:w-3/5 bg-green4 text-white rounded-2xl hover:bg-green2 hover:text-white transition break-words max-w-full text-center"
           href="#houses"
           data-aos="zoom-in"
-          data-aos-delay="400"
+          data-aos-delay="900"
+          data-aos-duration="1000"
         >
           Zobacz ofertę
         </Link>
@@ -32,7 +36,8 @@ export default function Home() {
           className="py-3 w-56 max-md:w-3/5 bg-green4 text-white rounded-2xl hover:bg-green2 hover:text-white transition break-words max-w-full text-center"
           href="#contact"
           data-aos="zoom-in"
-          data-aos-delay="600"
+          data-aos-delay="1100"
+          data-aos-duration="1000"
         >
           Skontaktuj się
         </Link>

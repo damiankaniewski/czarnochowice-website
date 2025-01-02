@@ -34,13 +34,21 @@ export default function Header() {
           isMenuOpen ? "bg-green3" : ""
         }`}
       >
-        <div className="flex items-center w-56">
+        <div
+          className="flex items-center w-56"
+          data-aos="zoom-out"
+          data-aos-duration="1000"
+        >
           <Link href="#home">
             <img src="/logo.png" alt="Logo" className="h-16 w-16 mr-2" />
           </Link>
         </div>
 
-        <nav className="hidden md:flex justify-center space-x-14 md:text-lg lg:text-xl w-dvw items-center">
+        <nav
+          className="hidden md:flex justify-center space-x-14 md:text-lg lg:text-xl w-dvw items-center"
+          data-aos="zoom-out"
+          data-aos-duration="1000"
+        >
           <Link
             href="#investment"
             className="block text-white hover:text-green1 hover:font-bold"
@@ -66,7 +74,11 @@ export default function Header() {
             GALERIA
           </Link>
         </nav>
-        <div className="w-1/6 flex justify-end">
+        <div
+          className="w-1/6 flex justify-end"
+          data-aos="zoom-out"
+          data-aos-duration="1000"
+        >
           <nav
             className={`max-md:hidden md:text-lg lg:text-xl bg-green2 p-3  rounded-2xl w-40 text-center hover:bg-green1 ${
               isScrolled ? "bg-green2" : ""
@@ -81,6 +93,8 @@ export default function Header() {
         <button
           className="md:hidden flex items-center text-white"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
+          data-aos="zoom-out"
+          data-aos-duration="1000"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
