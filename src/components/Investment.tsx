@@ -35,7 +35,7 @@ export default function Investment() {
             height={400}
           />
           <button
-            className={`absolute bottom-4 w-1/5 bg-opacity-75 text-white px-4 py-2 rounded-md ${
+            className={`absolute bottom-4 w-1/4 h-auto bg-opacity-75 text-white px-4 py-2 rounded-md ${
               isDay ? "bg-green2" : "bg-green4"
             } transition-all duration-300 flex flex-row items-center justify-center gap-2`}
             onClick={toggleImage}
@@ -106,7 +106,7 @@ export default function Investment() {
             height={400}
           />
           <button
-            className={`absolute bottom-4 w-1/5 bg-opacity-75 text-white px-4 py-2 rounded-md ${
+            className={`absolute bottom-4 w-1/4 h-auto bg-opacity-75 text-white px-4 py-2 rounded-md ${
               isDay ? "bg-green2" : "bg-green4"
             } transition-all duration-300 flex flex-row items-center justify-center gap-2`}
             onClick={toggleImage}
