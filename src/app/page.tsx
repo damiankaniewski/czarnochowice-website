@@ -15,7 +15,7 @@ export default function Home() {
         data-aos="fade-in"
         data-aos-duration="3000"
       />
-      <div className="h-full w-full">
+      <div className="h-full w-full overflow-hidden">
         <Header />
         <HomeSection />
         <Investment />
