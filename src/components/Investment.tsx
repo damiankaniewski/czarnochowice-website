@@ -20,7 +20,7 @@ export default function Investment() {
           O INWESTYCJI
         </p>
       </div>
-      <div className="flex flex-col lg:flex-row items-center justify-center pt-4 p-2 sm:px-10 gap-2 relative max-w-[1722px]">
+      <div className="flex flex-col lg:flex-row items-center justify-center pt-4 p-2 sm:px-10 gap-2 relative max-w-[1722px] overflow-hidden">
         <div
           className="lg:hidden relative  flex justify-center items-center overflow-hidden"
           data-aos="fade-left"
