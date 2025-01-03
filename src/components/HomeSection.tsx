@@ -7,7 +7,7 @@ export default function Home() {
       className="flex justify-center items-center w-full h-screen flex-col relative z-20"
     >
       <p
-        className="text-3xl md:text-5xl text-white font-bold mb-6 text-center break-words max-w-full"
+        className="text-3xl md:text-5xl text-white font-bold mb-6 text-center "
         data-aos="fade-up"
         data-aos-delay="500"
         data-aos-duration="1000"
@@ -15,7 +15,7 @@ export default function Home() {
         TWÓJ WYMARZONY DOM
       </p>
       <p
-        className="text-3xl md:text-5xl text-white font-bold text-center break-words max-w-full"
+        className="text-3xl md:text-5xl text-white font-bold text-center "
         data-aos="fade-up"
         data-aos-delay="700"
         data-aos-duration="1000"

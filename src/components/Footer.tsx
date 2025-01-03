@@ -5,8 +5,8 @@ export default function Footer() {
   return (
     <footer>
       <div className="w-full h-full flex flex-col ">
-        <div className="flex flex-row bg-green3 justify-between p-5">
-          <div className="flex flex-row justify-center items-center">
+        <div className="flex flex-col lg:flex-row bg-green3 justify-between p-5">
+          <div className="flex flex-col lg:flex-row justify-center items-center gap-4">
             <Link
               href="https://www.n20.pl/"
               target="_blank"
@@ -36,8 +36,8 @@ export default function Footer() {
               />
             </Link>
           </div>
-          <div className="flex flex-col justify-center h-full items-center">
-            <div className="flex flex-row h-full w-full">
+          <div className="flex flex-col justify-center items-center mt-5 lg:mt-0">
+            <div className="flex flex-row gap-4">
               <Link
                 href="https://www.facebook.com/N20RealEstate"
                 target="_blank"
@@ -49,6 +49,7 @@ export default function Footer() {
                   alt="Facebook"
                   width={80}
                   height={80}
+                  className="hover:scale-110 transition-transform"
                 />
               </Link>
               <Link
@@ -62,6 +63,7 @@ export default function Footer() {
                   alt="Instagram"
                   width={80}
                   height={80}
+                  className="hover:scale-110 transition-transform"
                 />
               </Link>
             </div>
@@ -69,19 +71,19 @@ export default function Footer() {
               href="https://www.n20.pl/polityka-prywatnosci"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full h-full p-2 text-center text-lg mt-5"
+              className="text-center text-sm lg:text-lg mt-5"
             >
               Polityka Prywatności
             </Link>
           </div>
         </div>
-        <div className="flex flex-row justify-between items-center py-1 px-2 bg-signature text-white">
-          <p className="my-4">2024 Policrafts ©</p>
-          <div className="pr-5">
-            <p className="text-signature_text text-right p-0 m-0">
+        <div className="flex flex-col md:flex-row justify-between items-center py-2 px-4 bg-signature text-white">
+          <p className="my-2 text-center md:text-left">2024 Policrafts ©</p>
+          <div className="text-center md:text-right">
+            <p className="text-signature_text p-0 m-0">
               Wizualizacje: Maciej Krzyszkowski
             </p>
-            <p className="text-signature_text text-right p-0 m-0">
+            <p className="text-signature_text p-0 m-0">
               Realizacja witryny: Rafał Ciupek
             </p>
           </div>
