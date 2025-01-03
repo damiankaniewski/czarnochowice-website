@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import galleryImages from "@/config/galleryImages";
+import { useSwipeable } from "react-swipeable";
 
 export default function Gallery() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -27,12 +28,22 @@ export default function Gallery() {
     return () => clearInterval(interval);
   }, []);
 
+  const handlers = useSwipeable({
+    onSwipedLeft: goToNext,
+    onSwipedRight: goToPrevious,
+    preventScrollOnSwipe: true,
+    trackMouse: true,
+  });
+
   return (
     <section
       id="gallery"
       className="w-full h-full flex flex-col items-center bg-grey relative scroll-mt-16"
     >
-      <div className="w-full px-10 pt-10 flex justify-center items-center relative overflow-hidden ">
+      <div
+        {...handlers}
+        className="w-full px-10 pt-10 flex justify-center items-center relative overflow-hidden "
+      >
         <button
           onClick={goToPrevious}
           className="absolute left-2 bg-green2 text-white p-4 rounded-full shadow-lg hover:bg-green3 focus:outline-none z-10 transition-all duration-300 ease-in-out"
