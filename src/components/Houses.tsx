@@ -32,7 +32,7 @@ export default function Houses() {
       </div>
 
       <div className="w-full px-6 lg:px-10 py-10 flex flex-col md:flex-row items-start gap-10 md:h-auto">
-        <div className="w-full md:w-1/2 flex justify-center md:justify-start items-start relative">
+        <div className="max-md:hidden w-full md:w-1/2 flex justify-center md:justify-start items-start relative">
           <div className="w-11/12 relative">
             <Image
               src="/renderZGory.jpg"
@@ -67,7 +67,7 @@ export default function Houses() {
 
         <div
           ref={listRef}
-          className="w-full md:w-1/2 flex justify-center items-start overflow-y-auto max-h-[70vh]"
+          className="w-full md:w-1/2 flex justify-center items-start overflow-y-auto md:max-h-[70vh]"
         >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full h-full">
             {houseOffer.map((house, index) => (
