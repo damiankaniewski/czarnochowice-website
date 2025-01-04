@@ -1,36 +1,158 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# **Real Estate Website - Interactive Platform**
 
-## Getting Started
+A modern web application designed to showcase real estate listings with a sleek design, responsive layout, and interactive features. The project is built with **Next.js** and styled using Tailwind CSS.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## **Table of Contents**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. [Project Overview](#project-overview)
+2. [Features](#features)
+3. [Technologies Used](#technologies-used)
+4. [Deployment](#deployment)
+5. [Screenshots](#screenshots)
+6. [System Requirements](#system-requirements)
+7. [Installation and Setup](#installation-and-setup)
+8. [Contributors](#contributors)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## **Project Overview**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The Real Estate Website is a modern platform that allows users to:
 
-## Learn More
+- View real estate listings with an interactive map and a list view.
+- Seamlessly navigate the website on both mobile and desktop devices.
+- Browse an image gallery with gesture support.
 
-To learn more about Next.js, take a look at the following resources:
+### **Main Sections of the Website**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Houses**: An interactive map with clickable icons leading to detailed property pages.
+2. **Gallery**: A carousel of property images with swipe functionality for mobile devices.
+3. **Contact**: A contact form enabling users to send inquiries directly from the website.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## **Features**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Real Estate Listings**:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+  - Map markers link to detailed property information.
+  - Scrollable property list synced with the map.
+
+- **Image Gallery**:
+
+  - Automatic slideshow with a 5-second interval.
+  - Mobile-friendly swipe gesture support.
+
+- **Responsive Design**:
+
+  - Fully optimized for mobile, tablet, and desktop devices.
+
+- **Contact Form**:
+  - Allows users to submit inquiries directly from the site.
+
+---
+
+## **Technologies Used**
+
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Icons**: [React Icons](https://react-icons.github.io/react-icons/)
+- **Animations**: [AOS (Animate on Scroll)](https://michalsnik.github.io/aos/)
+- **Font Handling**: [Google Fonts](https://fonts.google.com/)
+- **Hosting**: [AWS Amplify](https://aws.amazon.com/amplify/)
+
+---
+
+## Deployment
+
+The website is deployed and hosted using AWS Amplify.  
+Visit the live version here: [Deployed Website Link](https://master.dtqr2u07441zd.amplifyapp.com/)
+
+---
+
+## **Screenshots**
+
+### Home Page
+
+<p>
+    <img src="./screens/homepage.jpg" alt="HomePage" style="width: 79%">
+    <img src="./screens/homepage_mobile.jpg" alt="HomePage" style="width: 18%">
+</p>
+
+## Investment
+
+<p>
+    <img src="./screens/investment.jpg" alt="Investment" style="width: 81%">
+    <img src="./screens/investment_mobile.jpg" alt="Investment" style="width: 18%">
+</p>
+
+## Profit
+
+<p>
+    <img src="./screens/profits.jpg" alt="Profits" style="width: 81%">
+    <img src="./screens/profits_mobile.jpg" alt="Profits" style="width: 18%">
+</p>
+
+## Houses
+
+<p>
+    <img src="./screens/houses.jpg" alt="Houses" style="width: 79%">
+    <img src="./screens/houses_mobile.jpg" alt="Houses" style="width: 18%">
+</p>
+
+## Gallery
+
+<p>
+    <img src="./screens/gallery.jpg" alt="Gallery" style="width: 61%">
+    <img src="./screens/gallery_mobile.jpg" alt="Gallery" style="width: 36%">
+</p>
+
+## Contact
+
+<p>
+    <img src="./screens/contact.jpg" alt="Contact" style="width: 81%">
+    <img src="./screens/contact_mobile.jpg" alt="Contact" style="width: 18%">
+</p>
+
+---
+
+## **System Requirements**
+
+- Node.js version 14.x or newer.
+- npm or yarn package manager.
+
+---
+
+## **Installation and Setup**
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/ruffaaw/brzozowa-developer-website.git
+   cd your-repo-name
+   ```
+
+2. **Install dependencies**:
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Run the project locally**:
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. **Open the application in your browser**:  
+   The application will be available at [http://localhost:3000](http://localhost:3000).
+
+---
+
+## **Contributors**
+
+- **Rafał Ciupek**: [GitHub](https://github.com/ruffaaw)
