@@ -2,8 +2,6 @@
 
 A modern web application designed to showcase real estate listings with a sleek design, responsive layout, and interactive features. The project is built with **Next.js** and styled using Tailwind CSS.
 
----
-
 ## **Table of Contents**
 
 1. [Project Overview](#project-overview)
@@ -29,8 +27,6 @@ The Real Estate Website is a modern platform that allows users to:
 2. **Gallery**: A carousel of property images with swipe functionality for mobile devices.
 3. **Contact**: A contact form enabling users to send inquiries directly from the website.
 
----
-
 ## **Features**
 
 - **Real Estate Listings**:
@@ -50,8 +46,6 @@ The Real Estate Website is a modern platform that allows users to:
 - **Contact Form**:
   - Allows users to submit inquiries directly from the site.
 
----
-
 ## **Technologies Used**
 
 - **Framework**: [Next.js](https://nextjs.org/)
@@ -61,14 +55,10 @@ The Real Estate Website is a modern platform that allows users to:
 - **Font Handling**: [Google Fonts](https://fonts.google.com/)
 - **Hosting**: [AWS Amplify](https://aws.amazon.com/amplify/)
 
----
-
 ## Deployment
 
 The website is deployed and hosted using AWS Amplify.  
 Visit the live version here: [Deployed Website Link](https://master.dtqr2u07441zd.amplifyapp.com/)
-
----
 
 ## **Screenshots**
 
@@ -114,14 +104,10 @@ Visit the live version here: [Deployed Website Link](https://master.dtqr2u07441z
     <img src="./screens/contact_mobile.jpg" alt="Contact" style="width: 18%">
 </p>
 
----
-
 ## **System Requirements**
 
 - Node.js version 14.x or newer.
 - npm or yarn package manager.
-
----
 
 ## **Installation and Setup**
 
@@ -150,8 +136,6 @@ Visit the live version here: [Deployed Website Link](https://master.dtqr2u07441z
 
 4. **Open the application in your browser**:  
    The application will be available at [http://localhost:3000](http://localhost:3000).
-
----
 
 ## **Contributors**
 
