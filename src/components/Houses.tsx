@@ -7,7 +7,17 @@ import { useRef } from "react";
 export default function Houses() {
   const listRef = useRef<HTMLDivElement>(null);
 
+  const isMobile = () => window.innerWidth <= 768;
+
   const scrollToOffer = (id: string) => {
+    if (isMobile()) {
+      scrollToOfferMobile(id);
+    } else {
+      scrollToOfferDesktop(id);
+    }
+  };
+
+  const scrollToOfferDesktop = (id: string) => {
     const container = listRef.current;
     const targetElement = document.getElementById(id);
 
@@ -17,6 +27,14 @@ export default function Houses() {
 
       const offset = targetTop - containerTop + container.scrollTop;
       container.scrollTo({ top: offset, behavior: "smooth" });
+    }
+  };
+
+  const scrollToOfferMobile = (id: string) => {
+    const targetElement = document.getElementById(id);
+
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth", block: "end" });
     }
   };
 
@@ -32,7 +50,7 @@ export default function Houses() {
       </div>
 
       <div className="w-full px-6 lg:px-10 py-10 flex flex-col md:flex-row items-start gap-10 md:h-auto">
-        <div className="max-md:hidden w-full md:w-1/2 flex justify-center md:justify-start items-start relative">
+        <div className="w-full md:w-1/2 flex justify-center md:justify-start items-start relative">
           <div className="w-11/12 relative">
             <Image
               src="/renderZGory.jpg"
@@ -48,12 +66,10 @@ export default function Houses() {
               <button
                 key={index}
                 onClick={() => scrollToOffer(`house-${house.numer}`)}
-                className="absolute flex justify-center items-center text-white bg-green2 rounded-full text-sm font-bold hover:bg-green3 transition-all duration-200"
+                className="absolute flex justify-center items-center text-white bg-green2 rounded-full w-5 h-5 lg:w-7 lg:h-7 xl:w-8 xl:h-8 text-sm lg:text-base font-bold hover:bg-green3 transition-all duration-200"
                 style={{
                   top: `${house.y}%`,
                   left: `${house.x}%`,
-                  width: "35px",
-                  height: "35px",
                   transform: "translate(-50%, -50%)",
                 }}
                 data-aos="fade-down"
