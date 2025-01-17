@@ -60,20 +60,23 @@ export default function Contact() {
     }
 
     const body = {
-      email: "biuro@n20.pl", // do zamiany na odpowiedni adres
-      subject: `Sadowa 20 - Wiadomość od: ${formData.name}`,
+      email: "biuro@n20.pl",
+      subject: `Domy przy Brzozowej - Wiadomość od: ${formData.name}`,
       message: `Imię i nazwisko: ${formData.name}\nEmail: ${formData.email}\nTelefon: ${formData.phone}\n\n${formData.message}`,
     };
 
     try {
-      const response = await fetch("", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "x-api-key": "_just-a'test\"key,or>is<it?",
-        },
-        body: JSON.stringify(body),
-      });
+      const response = await fetch(
+        "https://jc5vg6se5e.execute-api.eu-north-1.amazonaws.com/dev/send-mail",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "x-api-key": "_just-a'test\"key,or>is<it?",
+          },
+          body: JSON.stringify(body),
+        }
+      );
       if (response.ok) {
         alert("Wiadomość została wysłana pomyślnie!");
         setFormData({
