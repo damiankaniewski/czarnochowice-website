@@ -110,7 +110,6 @@ export default function Houses() {
                   </p>
                   <p className="text-gray-600">Metraż: {house.metraz} m²</p>
                   <p className="text-gray-600">Pokoje: {house.pokoje}</p>
-                  <p className="text-gray-600">Poziom: {house.poziom}</p>
                   <p className="text-gray-600">Ogródek: {house.ogrodek} m²</p>
                   <p className="text-gray-600 font-bold">
                     Cena: {house.cena} zł
@@ -121,6 +120,8 @@ export default function Houses() {
                   <a
                     className="w-full bg-green2 p-4 rounded-xl text-white flex justify-center items-center gap-2 hover:bg-green3 transition-all duration-200"
                     href={house.linkDoOferty}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <FaDownload className="w-5 h-5" />
                     <span className="text-base">Szczegóły oferty</span>
