@@ -66,7 +66,9 @@ export default function Houses() {
               <button
                 key={index}
                 onClick={() => scrollToOffer(`house-${house.numer}`)}
-                className="absolute flex justify-center items-center text-white bg-green2 rounded-full w-5 h-5 lg:w-7 lg:h-7 xl:w-8 xl:h-8 text-sm lg:text-base font-bold hover:bg-green3 transition-all duration-200"
+                className={`absolute flex justify-center items-center text-white ${
+                  house.status === "Dostępny" ? "bg-green2" : "bg-red-500"
+                } rounded-full w-5 h-5 lg:w-7 lg:h-7 xl:w-8 xl:h-8 text-sm lg:text-base font-bold hover:bg-green3 transition-all duration-200`}
                 style={{
                   top: `${house.y}%`,
                   left: `${house.x}%`,
