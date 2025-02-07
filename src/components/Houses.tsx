@@ -1,11 +1,55 @@
 "use client";
 import Image from "next/image";
-import houseOffer from "@/config/houseOffer";
+import houseCoordinates from "@/config/houseCoordinates";
 import { FaDownload } from "react-icons/fa6";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Houses() {
   const listRef = useRef<HTMLDivElement>(null);
+  const [houseOffers, setHouseOffers] = useState<any[]>([]);
+
+  const getStatusText = (status: number) => {
+    switch (status) {
+      case 0:
+        return "Niedostępny";
+      case 1:
+        return "Dostępny";
+      case 2:
+        return "Zarezerwowany";
+      default:
+        return "Nieznany";
+    }
+  };
+
+  useEffect(() => {
+    const fetchHouseOffers = async () => {
+      try {
+        const response = await fetch(
+          "https://o28scgzs0g.execute-api.eu-central-1.amazonaws.com/prd/get-items"
+        );
+        const data = await response.json();
+        const sortedData = data.body.sort((a: any, b: any) =>
+          a.Id.localeCompare(b.Id)
+        );
+
+        const combinedData = sortedData.map((house: any) => {
+          const coords = houseCoordinates.find(
+            (coord) => coord.numer === house.Id
+          );
+          return {
+            ...house,
+            x: coords?.x || 0,
+            y: coords?.y || 0,
+          };
+        });
+        setHouseOffers(combinedData);
+      } catch (error) {
+        alert("Błąd podczas pobierania danych");
+        console.log("Błąd podczas pobierania danych: ", error);
+      }
+    };
+    fetchHouseOffers();
+  }, []);
 
   const isMobile = () => window.innerWidth <= 768;
 
@@ -62,12 +106,16 @@ export default function Houses() {
               height={400}
               data-aos="fade-down"
             />
-            {houseOffer.map((house, index) => (
+            {houseOffers.map((house, index) => (
               <button
                 key={index}
                 onClick={() => scrollToOffer(`house-${house.numer}`)}
                 className={`absolute flex justify-center items-center text-white ${
-                  house.status === "Dostępny" ? "bg-green2" : "bg-red-500"
+                  house.status === 0
+                    ? "bg-red-500"
+                    : house.status === 1
+                    ? "bg-green2"
+                    : "bg-yellow-500"
                 } rounded-full w-5 h-5 lg:w-7 lg:h-7 xl:w-8 xl:h-8 text-sm lg:text-base font-bold hover:bg-green3 transition-all duration-200`}
                 style={{
                   top: `${house.y}%`,
@@ -86,9 +134,10 @@ export default function Houses() {
         <div
           ref={listRef}
           className="w-full md:w-1/2 flex justify-center items-start overflow-y-auto md:max-h-[70vh]"
+          data-aos="fade-up"
         >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full h-full">
-            {houseOffer.map((house, index) => (
+            {houseOffers.map((house, index) => (
               <div
                 key={index}
                 id={`house-${house.numer}`}
@@ -102,12 +151,14 @@ export default function Houses() {
                     Status:{" "}
                     <span
                       className={`${
-                        house.status === "Dostępny"
+                        house.status === 0
+                          ? "text-red-500"
+                          : house.status === 1
                           ? "text-green-500"
-                          : "text-red-500"
+                          : "text-yellow-500"
                       } font-semibold`}
                     >
-                      {house.status}
+                      {getStatusText(house.status)}
                     </span>
                   </p>
                   <p className="text-gray-600">Metraż: {house.metraz} m²</p>
@@ -121,7 +172,7 @@ export default function Houses() {
                 <div className="mt-4">
                   <a
                     className="w-full bg-green2 p-4 rounded-xl text-white flex justify-center items-center gap-2 hover:bg-green3 transition-all duration-200"
-                    href={house.linkDoOferty}
+                    href={house.pdf}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
