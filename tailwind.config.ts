@@ -18,7 +18,6 @@ export default {
         green4: "#344E41",
         signature: "#555",
         signature_text: "#aaa",
-        color1: "#403D39",
       },
       backgroundImage: {
         render1: "url('/render1.jpg')",
