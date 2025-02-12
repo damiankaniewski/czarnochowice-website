@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="w-full h-full flex flex-col ">
-        <div className="flex flex-col lg:flex-row bg-green3 justify-between p-5">
+        <div className="flex flex-col lg:flex-row bg-color1 justify-between p-5">
           <div className="flex flex-col lg:flex-row justify-center items-center gap-4">
             <Link
               href="https://www.n20.pl/"
