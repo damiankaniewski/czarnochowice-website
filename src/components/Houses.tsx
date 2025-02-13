@@ -116,7 +116,7 @@ export default function Houses() {
                     : house.status === 1
                     ? "bg-green2"
                     : "bg-yellow-500"
-                } rounded-full w-5 h-5 lg:w-7 lg:h-7 xl:w-8 xl:h-8 text-sm lg:text-base font-bold hover:bg-green3 transition-all duration-200`}
+                } rounded-full w-5 h-5 lg:w-7 lg:h-7 xl:w-8 xl:h-8 text-sm lg:text-base font-bold transition-all duration-200`}
                 style={{
                   top: `${house.y}%`,
                   left: `${house.x}%`,
