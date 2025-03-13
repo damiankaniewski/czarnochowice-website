@@ -139,4 +139,5 @@ Visit the live version here: [Deployed Website Link](https://master.dtqr2u07441z
 
 ## **Contributors**
 
-- **Rafał Ciupek**: [GitHub](https://github.com/ruffaaw)
+- **Rafał Ciupek**: [GitHub](https://github.com/ruffaaw), [LinkedIn](https://www.linkedin.com/in/rafa%C5%82-ciupek-514039246/)
+- **Maciej Krzyszkowski**: [LinkedIn](https://www.linkedin.com/in/maciej-krzyszkowski-1778ba259/)
