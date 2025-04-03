@@ -21,6 +21,12 @@ export default function Houses() {
     }
   };
 
+  const formatPrice = (price: number | string): string => {
+    const priceStr = typeof price === "number" ? price.toString() : price;
+    const cleanPrice = priceStr.replace(/\s/g, "");
+    return cleanPrice.replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  };
+
   useEffect(() => {
     const fetchHouseOffers = async () => {
       try {
@@ -40,8 +46,10 @@ export default function Houses() {
             ...house,
             x: coords?.x || 0,
             y: coords?.y || 0,
+            cena: house.cena ? formatPrice(house.cena) : house.cena,
           };
         });
+        console.log(combinedData);
         setHouseOffers(combinedData);
       } catch (error) {
         alert("Błąd podczas pobierania danych");
@@ -94,7 +102,7 @@ export default function Houses() {
       </div>
 
       <div className="w-full px-6 lg:px-10 py-10 flex flex-col md:flex-row items-start gap-10 md:h-auto">
-        <div className="w-full md:w-3/4 flex justify-center md:justify-start items-start relative">
+        <div className="w-full md:w-[56%] flex justify-center md:justify-start items-start relative">
           <div className="w-full relative">
             <Image
               src="/renderZGory.jpg"
