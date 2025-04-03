@@ -94,15 +94,15 @@ export default function Houses() {
       </div>
 
       <div className="w-full px-6 lg:px-10 py-10 flex flex-col md:flex-row items-start gap-10 md:h-auto">
-        <div className="w-full md:w-1/2 flex justify-center md:justify-start items-start relative">
-          <div className="w-11/12 relative">
+        <div className="w-full md:w-3/4 flex justify-center md:justify-start items-start relative">
+          <div className="w-full relative">
             <Image
               src="/renderZGory.jpg"
               alt="Estate"
               layout="responsive"
               objectFit="cover"
               className="rounded-lg shadow-lg"
-              width={533}
+              width={600}
               height={400}
               data-aos="fade-down"
             />
@@ -163,7 +163,7 @@ export default function Houses() {
                   </p>
                   <p className="text-gray-600">Metraż: {house.metraz} m²</p>
                   <p className="text-gray-600">Pokoje: {house.pokoje}</p>
-                  <p className="text-gray-600">Ogródek: {house.ogrodek} m²</p>
+                  <p className="text-gray-600">Działka: {house.dzialka} ara</p>
                   <p className="text-gray-600 font-bold">
                     Cena: {house.cena} zł
                   </p>
