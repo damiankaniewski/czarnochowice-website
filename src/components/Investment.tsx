@@ -61,7 +61,7 @@ export default function Investment() {
                 Odległości do miast
               </h3>
               <ul className="list-disc list-inside text-base sm:text-lg ml-4 sm:ml-6">
-                <li>Kraków - 25 km (centrum, 4,5 km do granic miasta)</li>
+                <li>Kraków – 25 km (do centrum), 4,5 km (do granic miasta)</li>
                 <li>Niepołomice - 5 km</li>
                 <li>Wieliczka - 6,5 km</li>
               </ul>
