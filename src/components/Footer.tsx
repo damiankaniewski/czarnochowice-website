@@ -78,7 +78,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center py-2 px-4 bg-signature text-white">
-          <p className="my-2 text-center md:text-left">2024 Policrafts ©</p>
+          <p className="my-2 text-center md:text-left">2025 Policrafts ©</p>
           <div className="text-center md:text-right">
             <p className="text-signature_text p-0 m-0">
               Wizualizacje: Maciej Krzyszkowski

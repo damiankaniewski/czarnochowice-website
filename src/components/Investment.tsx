@@ -154,7 +154,7 @@ export default function Investment() {
               </h3>
               <p className="text-base sm:text-lg ">
                 Działka jest w pełni własnością przyszłych mieszkańców. Zarówno
-                budynek, jak i teren są objęte prawem własności na 100%, co
+                budynek, jak i teren są objęte prawem własności w 100%, co
                 zapewnia pełną kontrolę nad nieruchomością.
               </p>
             </div>
@@ -176,8 +176,8 @@ export default function Investment() {
               </h3>
               <p className="text-base sm:text-lg ">
                 Każdy dom posiada przestronną strefę tarasowo-ogrodową o
-                powierzchni od 300 do 400 m². Umiejscowienie tarasu biegunowo
-                względem sąsiedniego budynku maksymalizuje prywatność i zapewnia
+                powierzchni ok 400 m². Umiejscowienie tarasu biegunowo względem
+                sąsiedniego budynku maksymalizuje prywatność i zapewnia
                 komfortową przestrzeń do wypoczynku.
               </p>
             </div>
@@ -244,9 +244,8 @@ export default function Investment() {
                 Możliwości adaptacji dachu
               </h3>
               <p className="text-base sm:text-lg">
-                Dach można zaadoptować na zieloną strefę relaksu lub miejsce do
-                odpoczynku. Może również stanowić idealną przestrzeń do
-                zamontowania paneli fotowoltaicznych, co jest dodatkowym atutem.
+                Dach można zaadaptować jako idealną przestrzeń do zamontowania
+                paneli fotowoltaicznych, co jest dodatkowym atutem.
               </p>
             </div>
           </div>
@@ -324,7 +323,7 @@ export default function Investment() {
                 Okna, rolety i brama
               </h3>
               <p className="text-base sm:text-lg ">
-                Okna tarasowe typu HST oraz elektrycznie sterowane rolety
+                Okna tarasowe typu HST/Slide oraz elektrycznie sterowane rolety
                 podtynkowe podnoszą funkcjonalność i estetykę wnętrz, a
                 przesuwana brama wjazdowa z furtką zapewnia wygodny dostęp do
                 nieruchomości.
@@ -337,9 +336,10 @@ export default function Investment() {
               </h3>
               <p className="text-base sm:text-lg ">
                 Budynki zostały zaprojektowane z bardzo dobrą izolacją termiczną
-                (ściany grubości 50 cm), co zapewnia komfort cieplny. Dodatkowo
-                instalacje są przygotowane pod klimatyzację i fotowoltaikę, co
-                podnosi standard użytkowy domu.
+                (ściany z pustaka ceramicznego 30 cm + styropian 20 cm), co
+                zapewnia komfort cieplny. Dodatkowo instalacje są przygotowane
+                pod klimatyzację i fotowoltaikę, co podnosi standard użytkowy
+                domu.
               </p>
             </div>
           </div>

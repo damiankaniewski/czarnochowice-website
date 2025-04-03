@@ -43,7 +43,7 @@ export default function Profits() {
     },
     {
       icon: <FaTemperatureHalf className="text-green4 text-5xl" />,
-      title: "Wysoka izolacja termiczna (50 cm ściany)",
+      title: "Wysoka izolacja termiczna",
       description:
         "Ściany o wyjątkowej izolacji gwarantujące oszczędność energii.",
       delay: 500,
