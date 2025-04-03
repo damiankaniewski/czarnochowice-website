@@ -22,7 +22,7 @@ export default function Footer() {
               />
             </Link>
             <Link
-              href="https://www.n20.pl/"
+              href="https://main.d2ilhc9l1y269y.amplifyapp.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2"
