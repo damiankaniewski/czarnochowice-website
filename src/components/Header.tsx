@@ -40,7 +40,11 @@ export default function Header() {
           data-aos-duration="1000"
         >
           <Link href="#home">
-            <img src="/logo.png" alt="Logo" className="h-16 w-16 mr-2" />
+            <img
+              src="/logo.png"
+              alt="Logo"
+              className="h-16 w-16 mr-2 drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]"
+            />
           </Link>
         </div>
 
@@ -51,25 +55,25 @@ export default function Header() {
         >
           <Link
             href="#investment"
-            className="block text-white hover:text-green1 font-bold"
+            className="block text-white hover:text-green1 font-bold drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]"
           >
             O INWESTYCJI
           </Link>
           <Link
             href="#profits"
-            className="block text-white hover:text-green1 font-bold"
+            className="block text-white hover:text-green1 font-bold drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]"
           >
             PROFITY
           </Link>
           <Link
             href="#houses"
-            className="block text-white hover:text-green1 font-bold"
+            className="block text-white hover:text-green1 font-bold drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]"
           >
             DOMY
           </Link>
           <Link
             href="#gallery"
-            className="block text-white hover:text-green1 font-bold"
+            className="block text-white hover:text-green1 font-bold drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]"
           >
             GALERIA
           </Link>
@@ -86,7 +90,9 @@ export default function Header() {
           >
             <Link
               href="#contact"
-              className={"block text-white w-full font-bold"}
+              className={
+                "block text-white w-full font-bold drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]"
+              }
             >
               KONTAKT
             </Link>
@@ -94,7 +100,7 @@ export default function Header() {
         </div>
 
         <button
-          className="md:hidden flex items-center text-white pr-4"
+          className="md:hidden flex items-center text-white pr-4 drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           data-aos="zoom-out"
           data-aos-duration="1000"
@@ -120,35 +126,35 @@ export default function Header() {
         <div className="fixed flex flex-col items-center top-24 pt-4 bg-green3  shadow-md z-30 w-screen h-auto">
           <Link
             href="#investment"
-            className="text-white text-xl w-full py-5 flex justify-center hover:bg-green2 "
+            className="text-white text-xl w-full py-5 flex justify-center hover:bg-green2 drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]"
             onClick={() => setIsMenuOpen(false)}
           >
             <p className="break-words max-w-full">O inwestycji</p>
           </Link>
           <Link
             href="#profits"
-            className="text-white text-xl w-full py-5 flex justify-center hover:bg-green2 break-words max-w-full"
+            className="text-white text-xl w-full py-5 flex justify-center hover:bg-green2 break-words max-w-full drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]"
             onClick={() => setIsMenuOpen(false)}
           >
             <p className="break-words max-w-full">Profity</p>
           </Link>
           <Link
             href="#houses"
-            className="text-white text-xl w-full py-5 flex justify-center hover:bg-green2 break-words max-w-full"
+            className="text-white text-xl w-full py-5 flex justify-center hover:bg-green2 break-words max-w-full drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]"
             onClick={() => setIsMenuOpen(false)}
           >
             <p className="break-words max-w-full">Domy</p>
           </Link>
           <Link
             href="#gallery"
-            className="text-white text-xl w-full py-5 flex justify-center hover:bg-green2 break-words max-w-full"
+            className="text-white text-xl w-full py-5 flex justify-center hover:bg-green2 break-words max-w-full drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]"
             onClick={() => setIsMenuOpen(false)}
           >
             <p className="break-words max-w-full">Galeria</p>
           </Link>
           <Link
             href="#contact"
-            className="text-white text-xl w-full py-5 flex justify-center hover:bg-green2 break-words max-w-full"
+            className="text-white text-xl w-full py-5 flex justify-center hover:bg-green2 break-words max-w-full drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]"
             onClick={() => setIsMenuOpen(false)}
           >
             <p className="break-words max-w-full">Kontakt</p>
