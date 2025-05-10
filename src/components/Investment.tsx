@@ -50,11 +50,12 @@ export default function Investment() {
               Lokalizacja inwestycji
             </h2>
             <p className="text-base sm:text-lg mb-4 sm:mb-6">
-              Inwestycja położona jest w doskonałej lokalizacji, zapewniając
-              szybki dostęp do głównych punktów Krakowa i okolicznych miast.
-              Zjazd z autostrady A4 w odległości 1,2 km sprawia, że podróże są
-              wygodne, a przystanek MPK w odległości 700 metrów umożliwia łatwy
-              dostęp do komunikacji miejskiej.
+              Inwestycja <strong>Domy przy brzozowej</strong> położona jest w
+              doskonałej lokalizacji, zapewniając szybki dostęp do głównych
+              punktów Krakowa i okolicznych miast. Zjazd z autostrady A4 w
+              odległości 1,2 km sprawia, że podróże są wygodne, a przystanek MPK
+              w odległości 700 metrów umożliwia łatwy dostęp do komunikacji
+              miejskiej.
             </p>
             <div className="mb-4 sm:mb-6">
               <h3 className="text-lg sm:text-xl font-semibold mb-2">
@@ -300,10 +301,11 @@ export default function Investment() {
                 Wysoka jakość wykonania
               </h3>
               <p className="text-base sm:text-lg ">
-                Standard deweloperski Premium zapewnia najwyższą jakość
-                wykonania oraz zastosowanie nowoczesnych technologii. Każdy dom
-                został zaprojektowany z dbałością o szczegóły, aby zapewnić
-                komfort i funkcjonalność.
+                <strong>Domy przy Brzozowej</strong> oferują standard Premium,
+                który gwarantuje najwyższą jakość wykonania oraz zastosowanie
+                nowoczesnych technologii. Każdy dom został zaprojektowany z
+                dbałością o szczegóły, aby zapewnić komfort i funkcjonalność na
+                najwyższym poziomie.
               </p>
             </div>
 
