@@ -45,7 +45,7 @@ export default function Profits() {
       icon: <FaTemperatureHalf className="text-green4 text-5xl" />,
       title: "Wysoka izolacja termiczna",
       description:
-        "Ściany o wyjątkowej izolacji gwarantujące oszczędność energii.",
+        "Ściany o wyjątkowej izolacji, gwarantujące oszczędność energii.",
       delay: 500,
     },
     {
@@ -59,7 +59,7 @@ export default function Profits() {
 
       title: "Elektryczne rolety",
       description:
-        "Rolety podtynkowe sterowane elektrycznie dla większegobezpieczeństwa i wygody.",
+        "Rolety podtynkowe sterowane elektrycznie dla większego bezpieczeństwa i wygody.",
       delay: 700,
     },
   ];
