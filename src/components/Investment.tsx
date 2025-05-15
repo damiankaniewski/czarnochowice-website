@@ -50,7 +50,7 @@ export default function Investment() {
               Lokalizacja inwestycji
             </h2>
             <p className="text-base sm:text-lg mb-4 sm:mb-6">
-              Inwestycja <strong>Domy przy brzozowej</strong> położona jest w
+              Inwestycja <strong>Domy przy Brzozowej</strong> położona jest w
               doskonałej lokalizacji, zapewniając szybki dostęp do głównych
               punktów Krakowa i okolicznych miast. Zjazd z autostrady A4 w
               odległości 1,2 km sprawia, że podróże są wygodne, a przystanek MPK
@@ -72,10 +72,11 @@ export default function Investment() {
                 Wygoda codzienna
               </h3>
               <p className="text-base sm:text-lg">
-                W pobliżu znajdują się szkoły, sklepy, restauracje oraz tereny
-                zielone, co sprawia, że ta lokalizacja jest idealnym miejscem do
-                życia. Bliskość do wszystkich udogodnień zapewnia komfort
-                codziennego funkcjonowania.
+                W pobliżu <strong>Domów przy Brzozowej</strong> znajdują się
+                szkoły, sklepy, restauracje oraz tereny zielone, co sprawia, że
+                ta lokalizacja jest idealnym miejscem do życia. Bliskość do
+                wszystkich udogodnień zapewnia komfort codziennego
+                funkcjonowania.
               </p>
             </div>
             <div className="flex justify-center">
@@ -154,9 +155,10 @@ export default function Investment() {
                 Pełna własność działki
               </h3>
               <p className="text-base sm:text-lg ">
-                Działka jest w pełni własnością przyszłych mieszkańców. Zarówno
-                budynek, jak i teren są objęte prawem własności w 100%, co
-                zapewnia pełną kontrolę nad nieruchomością.
+                W <strong>Domach przy Brzozowej</strong> działka jest w pełni
+                własnością przyszłych mieszkańców. Zarówno budynek, jak i teren
+                są objęte prawem własności w 100%, co zapewnia pełną kontrolę
+                nad nieruchomością.
               </p>
             </div>
 
@@ -210,10 +212,11 @@ export default function Investment() {
                 Przestronność i komfort
               </h3>
               <p className="text-base sm:text-lg">
-                W domach zaprojektowano dużą, przeszkloną strefę dzienną z
-                bezpośrednim wyjściem do ogrodu. Dzięki temu wnętrza są
-                doskonale doświetlone naturalnym światłem, a przestronność
-                pomieszczeń wpływa na komfort codziennego życia.
+                W <strong>Domach przy Brzozowej</strong> zaprojektowano dużą,
+                przeszkloną strefę dzienną z&nbsp;bezpośrednim wyjściem do
+                ogrodu. Dzięki temu wnętrza są doskonale doświetlone naturalnym
+                światłem, a przestronność pomieszczeń wpływa na komfort
+                codziennego życia.
               </p>
             </div>
 
@@ -234,9 +237,9 @@ export default function Investment() {
               </h3>
               <p className="text-base sm:text-lg">
                 Na piętrze znajdują się trzy pełnowymiarowe sypialnie (brak
-                skosów), co zapewnia wygodę i przestronność. Dodatkowo, znajduje
-                się tam również przestronna łazienka, która zwiększa komfort
-                użytkowania.
+                skosów), co zapewnia wygodę i&nbsp;przestronność. Dodatkowo,
+                znajduje się tam również przestronna łazienka, która zwiększa
+                komfort użytkowania.
               </p>
             </div>
 
