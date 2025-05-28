@@ -22,15 +22,15 @@ export default function Footer() {
               />
             </Link>
             <Link
-              href="#home"
+              href="https://main.d2ilhc9l1y269y.amplifyapp.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2"
             >
               <Image
-                src="/logo_dlugie.png"
+                src="/logo_generator.png"
                 alt="N20"
-                width={305}
+                width={138.5}
                 height={122}
                 className="p-2"
               />
