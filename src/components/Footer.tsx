@@ -28,10 +28,10 @@ export default function Footer() {
               className="p-2"
             >
               <Image
-                src="/logo.png"
+                src="/logo_dlugie.png"
                 alt="N20"
-                width={144}
-                height={144}
+                width={305}
+                height={122}
                 className="p-2"
               />
             </Link>

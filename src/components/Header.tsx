@@ -41,15 +41,15 @@ export default function Header() {
         >
           <Link href="#home">
             <img
-              src="/logo.png"
+              src="/logo_dlugie.png"
               alt="Logo"
-              className="h-16 w-16 mr-2 drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]"
+              className="h-16 w-60 mr-2 drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)] object-contain"
             />
           </Link>
         </div>
 
         <nav
-          className="hidden md:flex justify-center space-x-14 md:text-lg lg:text-xl w-dvw items-center"
+          className="hidden md:flex justify-center space-x-7 lg:space-x-14 md:text-lg lg:text-xl w-dvw items-center"
           data-aos="zoom-out"
           data-aos-duration="1000"
         >

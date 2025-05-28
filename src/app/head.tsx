@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Domy przy brzozowej",
+  title: "Domy przy Brzozowej",
   description: "Zakrzów ul.Brzozowa 32-003 Niepołomice",
   image: "/logo.png",
 };
