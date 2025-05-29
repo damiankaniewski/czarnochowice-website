@@ -11,7 +11,7 @@ export default function Houses() {
   const getStatusText = (status: number) => {
     switch (status) {
       case 0:
-        return "Niedostępny";
+        return "Sprzedany";
       case 1:
         return "Dostępny";
       case 2:
@@ -172,9 +172,11 @@ export default function Houses() {
                   <p className="text-gray-600">Metraż: {house.metraz} m²</p>
                   <p className="text-gray-600">Pokoje: {house.pokoje}</p>
                   <p className="text-gray-600">Działka: {house.dzialka} ara</p>
-                  <p className="text-gray-600 font-bold">
-                    Cena: {house.cena} zł
-                  </p>
+                  {house.status !== 0 && (
+                    <p className="text-gray-600 font-bold">
+                      Cena: {house.cena} zł
+                    </p>
+                  )}
                 </div>
 
                 <div className="mt-4">
