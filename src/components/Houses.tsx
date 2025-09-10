@@ -3,10 +3,16 @@ import Image from "next/image";
 import houseCoordinates from "@/config/houseCoordinates";
 import { FaDownload } from "react-icons/fa6";
 import { useEffect, useRef, useState } from "react";
+import { FaInfoCircle } from "react-icons/fa";
 
 export default function Houses() {
   const listRef = useRef<HTMLDivElement>(null);
   const [houseOffers, setHouseOffers] = useState<any[]>([]);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const toggleOpen = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
 
   const getStatusText = (status: number) => {
     switch (status) {
@@ -46,6 +52,9 @@ export default function Houses() {
             ...house,
             x: coords?.x || 0,
             y: coords?.y || 0,
+            cenaZaMetrKwadratowy: formatPrice(
+              Number(house.cena / house.metraz).toFixed(2)
+            ),
             cena: house.cena ? formatPrice(house.cena) : house.cena,
           };
         });
@@ -172,13 +181,31 @@ export default function Houses() {
                   <p className="text-gray-600">Metraż: {house.metraz} m²</p>
                   <p className="text-gray-600">Pokoje: {house.pokoje}</p>
                   <p className="text-gray-600">Działka: {house.dzialka} ara</p>
-                  {house.status !== 0 && (
-                    <p className="text-gray-600 font-bold">
-                      Cena: {house.cena} zł
-                    </p>
-                  )}
-                </div>
+                  <p className="text-gray-600">
+                    Cena za metr: {house.cenaZaMetrKwadratowy} zł
+                  </p>
+                  <div className="text-gray-600 font-bold relative">
+                    <div className="flex items-center space-x-2">
+                      <span>Cena: {house.cena} zł</span>
+                      <button
+                        onClick={() => toggleOpen(index)}
+                        className="p-1 rounded-full hover:bg-gray-200 transition"
+                      >
+                        <FaInfoCircle size={18} className="text-gray-500" />
+                      </button>
+                    </div>
 
+                    {openIndex === index && (
+                      <div
+                        className="absolute top-full left-1/2 -translate-x-1/2 mt-2 
+                        bg-white text-gray-700 text-sm shadow-lg rounded-lg p-3 
+                        border w-max z-10"
+                      >
+                        Najniższa cena z ostatnich 30 dni: {house.cena30} zł
+                      </div>
+                    )}
+                  </div>
+                </div>
                 <div className="mt-4">
                   <a
                     className="w-full bg-green2 p-4 rounded-xl text-white flex justify-center items-center gap-2 hover:bg-green3 transition-all duration-200"
