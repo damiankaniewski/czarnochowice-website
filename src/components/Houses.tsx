@@ -201,7 +201,8 @@ export default function Houses() {
                         bg-white text-gray-700 text-sm shadow-lg rounded-lg p-3 
                         border w-max z-10"
                       >
-                        Najniższa cena z ostatnich 30 dni: {house.cena30} zł
+                        Najniższa cena z ostatnich 30 dni:{" "}
+                        {formatPrice(house.cena30)} zł
                       </div>
                     )}
                   </div>
