@@ -2,13 +2,18 @@
 import Image from "next/image";
 import houseCoordinates from "@/config/houseCoordinates";
 import { FaDownload } from "react-icons/fa6";
-import { useEffect, useRef, useState } from "react";
-import { FaInfoCircle } from "react-icons/fa";
+import { Key, useEffect, useRef, useState } from "react";
+import { FaClock, FaInfoCircle } from "react-icons/fa";
 
 export default function Houses() {
   const listRef = useRef<HTMLDivElement>(null);
   const [houseOffers, setHouseOffers] = useState<any[]>([]);
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [historyIndex, setHistoryIndex] = useState<number | null>(null);
+
+  const toggleHistory = (i: number) => {
+    setHistoryIndex(historyIndex === i ? null : i);
+  };
 
   const toggleOpen = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -193,8 +198,16 @@ export default function Houses() {
                       >
                         <FaInfoCircle size={18} className="text-gray-500" />
                       </button>
+                      {house.price_history &&
+                        house.price_history.length > 0 && (
+                          <button
+                            onClick={() => toggleHistory(index)}
+                            className="p-1 rounded-full hover:bg-gray-200 transition"
+                          >
+                            <FaClock size={18} className="text-gray-500" />
+                          </button>
+                        )}
                     </div>
-
                     {openIndex === index && (
                       <div
                         className="absolute top-full left-1/2 -translate-x-1/2 mt-2 
@@ -203,6 +216,37 @@ export default function Houses() {
                       >
                         Najniższa cena z ostatnich 30 dni:{" "}
                         {formatPrice(house.cena30)} zł
+                      </div>
+                    )}
+                    {historyIndex === index && (
+                      <div
+                        className="absolute top-full left-1/2 -translate-x-1/2 mt-2 
+      bg-white text-gray-700 text-sm shadow-lg rounded-lg p-3 
+      border w-max z-10 max-h-48 overflow-y-auto"
+                      >
+                        Historia cen:
+                        <ul className="space-y-1 mt-2">
+                          {house.price_history &&
+                            house.price_history.map(
+                              (
+                                entry: {
+                                  date: string | number | Date;
+                                  cena: number;
+                                },
+                                i: Key | null | undefined
+                              ) => (
+                                <li key={i} className="text-gray-700">
+                                  {new Date(entry.date).toLocaleDateString(
+                                    "pl-PL"
+                                  )}{" "}
+                                  –{" "}
+                                  <span className="font-semibold">
+                                    {formatPrice(entry.cena)} zł
+                                  </span>
+                                </li>
+                              )
+                            )}
+                        </ul>
                       </div>
                     )}
                   </div>
