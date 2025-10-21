@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import houseCoordinates from "@/config/houseCoordinates";
 import { FaDownload } from "react-icons/fa6";
 import { Key, useEffect, useRef, useState } from "react";
 import { FaClock, FaInfoCircle } from "react-icons/fa";
@@ -50,13 +49,8 @@ export default function Houses() {
         );
 
         const combinedData = sortedData.map((house: any) => {
-          const coords = houseCoordinates.find(
-            (coord) => coord.numer === house.Id
-          );
           return {
             ...house,
-            x: coords?.x || 0,
-            y: coords?.y || 0,
             cenaZaMetrKwadratowy: formatPrice(
               Number(house.cena / house.metraz).toFixed(2)
             ),
@@ -110,16 +104,16 @@ export default function Houses() {
       className="w-full flex flex-col items-center justify-between bg-grey relative scroll-mt-20"
     >
       <div className="w-full text-center pt-10 lg:py-10">
-        <p className="text-3xl sm:text-4xl lg:text-6xl text-green4 font-bold break-words max-w-full">
+        <p className="text-3xl sm:text-4xl lg:text-6xl text-white font-bold break-words max-w-full">
           DOMY
         </p>
       </div>
 
-      <div className="w-full px-6 lg:px-10 py-10 flex flex-col md:flex-row items-start gap-10 md:h-auto">
-        <div className="w-full md:w-[55%] flex justify-center md:justify-start items-start relative ">
+      <div className="w-full px-6 lg:px-10 max-lg:py-2 flex flex-col md:flex-col items-center gap-10 md:h-auto">
+        <div className="w-full lg:w-[35%] flex justify-center md:justify-start items-start relative ">
           <div className="w-full relative">
             <Image
-              src="/renderZGory2.jpg"
+              src="/Czarnochowice-tyl-25.png"
               alt="Estate"
               layout="responsive"
               objectFit="cover"
@@ -128,37 +122,15 @@ export default function Houses() {
               height={400}
               data-aos="fade-down"
             />
-            {houseOffers.map((house, index) => (
-              <button
-                key={index}
-                onClick={() => scrollToOffer(`house-${house.numer}`)}
-                className={`absolute flex justify-center items-center text-white ${
-                  house.status === 0
-                    ? "bg-red-500"
-                    : house.status === 1
-                    ? "bg-green2"
-                    : "bg-yellow-500"
-                } rounded-full w-5 h-5 lg:w-7 lg:h-7 xl:w-8 xl:h-8 text-sm lg:text-base font-bold transition-all duration-200`}
-                style={{
-                  top: `${house.y}%`,
-                  left: `${house.x}%`,
-                  transform: "translate(-50%, -50%)",
-                }}
-                data-aos="fade-down"
-                data-aos-delay={`${200 + index * 100}`}
-              >
-                {house.numer}
-              </button>
-            ))}
           </div>
         </div>
 
         <div
           ref={listRef}
-          className="w-full md:w-[45%] flex justify-center items-start overflow-y-auto md:max-h-[70vh]"
+          className="w-full md:w-[90%] flex justify-center items-start overflow-y-auto md:max-h-[70vh]"
           data-aos="fade-up"
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full h-full">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 w-full h-full">
             {houseOffers.map((house, index) => (
               <div
                 key={index}
@@ -221,8 +193,8 @@ export default function Houses() {
                     {historyIndex === index && (
                       <div
                         className="absolute top-full left-1/2 -translate-x-1/2 mt-2 
-      bg-white text-gray-700 text-sm shadow-lg rounded-lg p-3 
-      border w-max z-10 max-h-48 overflow-y-auto"
+                        bg-white text-gray-700 text-sm shadow-lg rounded-lg p-3 
+                        border w-max z-10 max-h-48 overflow-y-auto"
                       >
                         Historia cen:
                         <ul className="space-y-1 mt-2">

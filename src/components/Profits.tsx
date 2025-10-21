@@ -1,65 +1,63 @@
 import {
-  FaMapPin,
+  FaHammer,
+  FaLeaf,
   FaTree,
-  FaCouch,
-  FaHeart,
+  FaCar,
   FaSolarPanel,
   FaLock,
+  FaMapMarkerAlt,
+  FaMicrochip,
 } from "react-icons/fa";
-import { FaTemperatureHalf, FaHouseChimneyWindow } from "react-icons/fa6";
 export default function Profits() {
   const profitItems = [
     {
-      icon: <FaMapPin className="text-green4 text-5xl " />,
-      title: "Blisko Krakowa i pełnej infrastruktury miejskiej",
-      description:
-        "Dogodna lokalizacja w pobliżu Krakowa i kluczowych miejsc, z łatwym dostępem do autostrady.",
+      icon: <FaHammer className="text-white text-5xl" />,
+      title: "Wysoka jakość wykonania",
+      description: "Ceramiczne ściany Leier, dachówka Creaton Simpla oraz solidne ocieplenie zapewniają trwałość i komfort przez lata.",
       delay: 0,
     },
     {
-      icon: <FaTree className="text-green4 text-5xl" />,
-      title: "Spokój i natura z dala od miejskiego zgiełku",
-      description: "Zielona okolica łącząca ciszę i wygodę.",
+      icon: <FaLeaf className="text-white text-5xl" />,
+      title: "Zielona, spokojna okolica",
+      description: "Cicha część Czarnochowic, blisko natury i z szybkim dojazdem do Wieliczki oraz Krakowa.",
       delay: 100,
     },
     {
-      icon: <FaCouch className="text-green4 text-5xl" />,
-      title: "Przestronne wnętrza i nowoczesne rozwiązania architektoniczne",
-      description: "Domy z przestronnymi pokojami i funkcjonalnym układem.",
+      icon: <FaTree className="text-white text-5xl" />,
+      title: "Prywatne ogródki i duże tarasy",
+      description: "Każde mieszkanie posiada prywatny ogródek lub przestronny taras — idealny do relaksu i spotkań.",
       delay: 200,
     },
     {
-      icon: <FaHeart className="text-green4 text-5xl " />,
-      title: "Prywatne, ogrodzone działki",
-      description: "Działki zapewniające prywatność i przestrzeń do relaksu.",
+      icon: <FaSolarPanel className="text-white text-5xl" />,
+      title: "Przygotowanie pod fotowoltaikę",
+      description: "Instalacja przystosowana do montażu paneli fotowoltaicznych — energooszczędność w standardzie.",
       delay: 300,
     },
     {
-      icon: <FaSolarPanel className="text-green4 text-5xl" />,
-
-      title: "Pompa ciepła, rekuperacja, przygotowanie pod fotowoltaikę",
-      description: "Energooszczędne technologie redukujące koszty.",
+      icon: <FaLock className="text-white text-5xl" />,
+      title: "Ogrodzona przestrzeń i prywatność",
+      description: "Zamknięty teren z bramą na pilota i ogrodzeniem zapewnia poczucie bezpieczeństwa.",
       delay: 400,
     },
     {
-      icon: <FaTemperatureHalf className="text-green4 text-5xl" />,
-      title: "Wysoka izolacja termiczna",
+      icon: <FaCar className="text-white text-5xl" />,
+      title: "Własne miejsca postojowe",
       description:
-        "Ściany o wyjątkowej izolacji, gwarantujące oszczędność energii.",
+        "Do każdego mieszkania przypisane jest prywatne miejsce postojowe, z możliwością dodatkowego.",
       delay: 500,
     },
     {
-      icon: <FaLock className="text-green4 text-5xl" />,
-      title: "Zamknięty teren",
-      description: "Ogrodzona przestrzeń z przesuwaną bramą wjazdową i furtką.",
+      icon: <FaMicrochip className="text-white text-5xl" />,
+      title: "Nowoczesne technologie",
+      description: "W standardzie: piec gazowy Viessmann, instalacje teletechniczne, alarmowe i domofonowe.",
       delay: 600,
     },
     {
-      icon: <FaHouseChimneyWindow className="text-green4 text-5xl" />,
-
-      title: "Elektryczne rolety",
+      icon: <FaMapMarkerAlt className="text-white text-5xl" />,
+      title: "Doskonała lokalizacja",
       description:
-        "Rolety podtynkowe sterowane elektrycznie dla większego bezpieczeństwa i wygody.",
+        "Świetny dojazd do Krakowa i Wieliczki, w otoczeniu terenów zielonych, sklepów i szkół.",
       delay: 700,
     },
   ];
@@ -69,7 +67,7 @@ export default function Profits() {
       className="w-full h-full flex flex-col items-center bg-grey relative scroll-mt-20"
     >
       <div>
-        <p className="text-3xl sm:text-4xl lg:text-6xl text-green4 pt-10 font-bold break-words max-w-full">
+        <p className="text-3xl sm:text-4xl lg:text-6xl text-white pt-10 font-bold break-words max-w-full">
           PROFITY
         </p>
       </div>
@@ -78,7 +76,7 @@ export default function Profits() {
           {profitItems.map((item, index) => (
             <div
               key={index}
-              className="w-full flex flex-col text-green4 justify-center items-center px-4 space-y-3 max-md:pt-5"
+              className="w-full flex flex-col text-white justify-center items-center px-4 space-y-3 max-md:pt-5"
               data-aos="fade-up"
               data-aos-delay={item.delay}
             >

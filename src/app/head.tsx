@@ -1,7 +1,6 @@
 export const metadata = {
-  title: "Domy przy Brzozowej",
-  description: "Zakrzów ul.Brzozowa 32-003 Niepołomice",
-  image: "/favicon-brzozowa.ico",
+  title: "Czarnochowice",
+  description: "Czarnochowice domy na sprzedaż"
 };
 
 export default function Head() {
@@ -9,7 +8,6 @@ export default function Head() {
     <head>
       <title>{metadata.title}</title>
       <meta name="description" content={metadata.description} />
-      <link rel="icon" href={metadata.image} />
     </head>
   );
 }

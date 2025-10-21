@@ -14,24 +14,10 @@ export default function Footer() {
               className="p-2"
             >
               <Image
-                src="/n20logo.png"
+                src="/n20logoCzarne.png"
                 alt="N20"
                 width={212}
                 height={144}
-                className="p-2"
-              />
-            </Link>
-            <Link
-              href="https://main.d2ilhc9l1y269y.amplifyapp.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2"
-            >
-              <Image
-                src="/logo_generator.png"
-                alt="N20"
-                width={138.5}
-                height={122}
                 className="p-2"
               />
             </Link>
@@ -88,10 +74,7 @@ export default function Footer() {
           </a>
           <div className="text-center md:text-right">
             <p className="text-signature_text p-0 m-0">
-              Wizualizacje: Maciej Krzyszkowski
-            </p>
-            <p className="text-signature_text p-0 m-0">
-              Realizacja witryny: Rafał Ciupek
+              Realizacja witryny:
             </p>
           </div>
         </div>

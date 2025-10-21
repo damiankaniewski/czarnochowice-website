@@ -39,12 +39,8 @@ export default function Header() {
           data-aos="zoom-out"
           data-aos-duration="1000"
         >
-          <Link href="#home">
-            <img
-              src="/logo_dlugie.png"
-              alt="Logo"
-              className="h-16 w-60 mr-2 drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)] object-contain"
-            />
+          <Link href="#home" className="font-['titan-one'] hover:text-green1 font-bold lg:text-[32px] md:text-[28px] sm:text-[20px] drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]">
+            Czarnochowice
           </Link>
         </div>
 
@@ -71,12 +67,6 @@ export default function Header() {
           >
             DOMY
           </Link>
-          <Link
-            href="#gallery"
-            className="block text-white hover:text-green1 font-bold drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]"
-          >
-            GALERIA
-          </Link>
         </nav>
         <div
           className="w-1/6 flex justify-end"
@@ -84,7 +74,7 @@ export default function Header() {
           data-aos-duration="1000"
         >
           <nav
-            className={`max-md:hidden md:text-lg lg:text-xl bg-green2 p-3  rounded-2xl w-40 text-center hover:bg-green1 ${
+            className={`max-md:hidden md:text-lg lg:text-xl bg-grey p-3  rounded-2xl w-40 text-center hover:bg-green1 ${
               isScrolled ? "bg-green2" : ""
             }`}
           >
@@ -123,7 +113,7 @@ export default function Header() {
       </div>
 
       {isMenuOpen && (
-        <div className="fixed flex flex-col items-center top-24 pt-4 bg-green3  shadow-md z-30 w-screen h-auto">
+        <div className="fixed flex flex-col items-center pt-4 bg-green3  shadow-md z-30 w-screen h-auto">
           <Link
             href="#investment"
             className="text-white text-xl w-full py-5 flex justify-center hover:bg-green2 drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]"
@@ -144,13 +134,6 @@ export default function Header() {
             onClick={() => setIsMenuOpen(false)}
           >
             <p className="break-words max-w-full">Domy</p>
-          </Link>
-          <Link
-            href="#gallery"
-            className="text-white text-xl w-full py-5 flex justify-center hover:bg-green2 break-words max-w-full drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            <p className="break-words max-w-full">Galeria</p>
           </Link>
           <Link
             href="#contact"

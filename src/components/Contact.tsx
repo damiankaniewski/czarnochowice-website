@@ -61,7 +61,7 @@ export default function Contact() {
 
     const body = {
       email: "biuro@n20.pl",
-      subject: `Domy przy Brzozowej - Wiadomość od: ${formData.name}`,
+      subject: `Czarnochowice - Wiadomość od: ${formData.name}`,
       message: `Imię i nazwisko: ${formData.name}\nEmail: ${formData.email}\nTelefon: ${formData.phone}\n\n${formData.message}`,
     };
 
@@ -104,18 +104,18 @@ export default function Contact() {
     >
       <div className="max-w-screen-xl w-full text-center">
         <div>
-          <p className="text-3xl sm:text-4xl lg:text-6xl text-green4 font-bold break-words max-w-full">
+          <p className="text-3xl sm:text-4xl lg:text-6xl text-white font-bold break-words max-w-full">
             KONTAKT
           </p>
         </div>
-        <p className="text-lg md:text-3xl font-bold text-green2 pt-3">
+        <p className="text-lg md:text-3xl font-bold text-green1 pt-3">
           Masz jakieś pytania? Zainteresowała Cię nasza oferta? Zapraszamy
           serdecznie do kontaktu.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 w-full">
           <div className="w-full flex items-stretch">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3194.8443747714277!2d20.140027999999997!3d50.013461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTDCsDAwJzQ4LjUiTiAyMMKwMDgnMjQuMSJF!5e1!3m2!1spl!2spl!4v1735824868741!5m2!1spl!2spl"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10257.308115400298!2d20.059474398373133!3d50.00522537535748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471643fc6638d0b9%3A0xf1e4dceefb4c8caf!2s32-020%20Czarnochowice!5e0!3m2!1spl!2spl!4v1760682931167!5m2!1spl!2spl"
               frameBorder="0"
               className="w-full h-full rounded-lg shadow-lg"
             ></iframe>
@@ -235,13 +235,14 @@ export default function Contact() {
             className="flex justify-center"
           >
             <Image
-              src="/n20logoCzarne.png"
+              src="/n20logo.png"
               alt="N20"
-              width={255}
-              height={160}
+              width={212}
+              height={144}
+              className="p-2"
             />
           </a>
-          <div className="text-left font-bold text-gray-800 max-w-md">
+          <div className="text-left font-bold text-white-800 max-w-md">
             <h2 className="text-xl md:text-2xl mb-3">
               Kontakt biura nieruchomości
             </h2>
