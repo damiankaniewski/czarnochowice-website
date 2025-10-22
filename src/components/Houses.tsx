@@ -104,7 +104,7 @@ export default function Houses() {
       className="w-full flex flex-col items-center justify-between bg-grey relative scroll-mt-20"
     >
       <div className="w-full text-center pt-10 lg:py-10">
-        <p className="text-3xl sm:text-4xl lg:text-6xl text-white font-bold break-words max-w-full">
+        <p className="text-3xl sm:text-4xl lg:text-6xl text-green4 font-bold break-words max-w-full">
           DOMY
         </p>
       </div>

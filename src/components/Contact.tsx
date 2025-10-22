@@ -104,11 +104,11 @@ export default function Contact() {
     >
       <div className="max-w-screen-xl w-full text-center">
         <div>
-          <p className="text-3xl sm:text-4xl lg:text-6xl text-white font-bold break-words max-w-full">
+          <p className="text-3xl sm:text-4xl lg:text-6xl text-green4 font-bold break-words max-w-full">
             KONTAKT
           </p>
         </div>
-        <p className="text-lg md:text-3xl font-bold text-green1 pt-3">
+        <p className="text-lg md:text-3xl font-bold text-green2 pt-3">
           Masz jakieś pytania? Zainteresowała Cię nasza oferta? Zapraszamy
           serdecznie do kontaktu.
         </p>
@@ -235,14 +235,14 @@ export default function Contact() {
             className="flex justify-center"
           >
             <Image
-              src="/n20logo.png"
+              src="/n20logoCzarne.png"
               alt="N20"
               width={212}
               height={144}
               className="p-2"
             />
           </a>
-          <div className="text-left font-bold text-white-800 max-w-md">
+          <div className="text-left font-bold text-gray-800 max-w-md">
             <h2 className="text-xl md:text-2xl mb-3">
               Kontakt biura nieruchomości
             </h2>

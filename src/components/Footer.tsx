@@ -14,7 +14,7 @@ export default function Footer() {
               className="p-2"
             >
               <Image
-                src="/n20logoCzarne.png"
+                src="/n20logo.png"
                 alt="N20"
                 width={212}
                 height={144}

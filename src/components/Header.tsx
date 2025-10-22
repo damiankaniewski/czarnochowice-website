@@ -74,7 +74,7 @@ export default function Header() {
           data-aos-duration="1000"
         >
           <nav
-            className={`max-md:hidden md:text-lg lg:text-xl bg-grey p-3  rounded-2xl w-40 text-center hover:bg-green1 ${
+            className={`max-md:hidden md:text-lg lg:text-xl bg-green2 p-3  rounded-2xl w-40 text-center hover:bg-green1 ${
               isScrolled ? "bg-green2" : ""
             }`}
           >
