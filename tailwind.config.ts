@@ -20,8 +20,8 @@ export default {
         signature_text: "#aaa",
       },
       backgroundImage: {
-        render1: "url('/czarnochowice-przod-1.jpg')",
-        render1_mobile: "url('/czarnochowice-mobile.jpg')",
+        render1: "url('/Czarnochowice-przod-1.jpg')",
+        render1_mobile: "url('/Czarnochowice-mobile.jpg')",
       },
       width: {
         "3/10": "30%",
