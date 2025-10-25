@@ -41,11 +41,11 @@ export default function Houses() {
     const fetchHouseOffers = async () => {
       try {
         const response = await fetch(
-          "https://o28scgzs0g.execute-api.eu-central-1.amazonaws.com/prd/get-items"
+          "https://d04z1gp649.execute-api.eu-central-1.amazonaws.com/prod/get-items"
         );
         const data = await response.json();
         const sortedData = data.body.sort((a: any, b: any) =>
-          a.Id.localeCompare(b.Id)
+          a.id.localeCompare(b.id)
         );
 
         const combinedData = sortedData.map((house: any) => {
@@ -157,7 +157,7 @@ export default function Houses() {
                   </p>
                   <p className="text-gray-600">Metraż: {house.metraz} m²</p>
                   <p className="text-gray-600">Pokoje: {house.pokoje}</p>
-                  <p className="text-gray-600">Działka: {house.dzialka} ara</p>
+                  <p className="text-gray-600">Działka: {house.ogrodek} ara</p>
                   <p className="text-gray-600">
                     Cena za metr: {house.cenaZaMetrKwadratowy} zł
                   </p>
@@ -182,17 +182,19 @@ export default function Houses() {
                     </div>
                     {openIndex === index && (
                       <div
-                        className="absolute top-full left-1/2 -translate-x-1/2 mt-2 
+                        className="absolute top-full left-1/2 -translate-x-1/2 -translate-y-24
                         bg-white text-gray-700 text-sm shadow-lg rounded-lg p-3 
                         border w-max z-10"
                       >
-                        Najniższa cena z ostatnich 30 dni:{" "}
-                        {formatPrice(house.cena30)} zł
+                        Najniższa cena z ostatnich 30 dni:<br/>
+                        <p className="space-y-1 mt-2">
+                          {formatPrice(house.cena30)} zł
+                        </p>
                       </div>
                     )}
                     {historyIndex === index && (
                       <div
-                        className="absolute top-full left-1/2 -translate-x-1/2 mt-2 
+                        className="absolute top-full left-1/2 -translate-x-1/2 -translate-y-24
                         bg-white text-gray-700 text-sm shadow-lg rounded-lg p-3 
                         border w-max z-10 max-h-48 overflow-y-auto"
                       >
@@ -223,7 +225,7 @@ export default function Houses() {
                     )}
                   </div>
                 </div>
-                <div className="mt-4">
+                <div className="mt-4 hidden">
                   <a
                     className="w-full bg-green2 p-4 rounded-xl text-white flex justify-center items-center gap-2 hover:bg-green3 transition-all duration-200"
                     href={house.pdf}

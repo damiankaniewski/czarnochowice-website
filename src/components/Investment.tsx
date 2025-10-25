@@ -14,7 +14,7 @@ export default function Investment() {
         </p>
       </div>
       <div className="flex flex-col lg:flex-row items-center justify-center pt-4 p-2 sm:px-10 gap-2 relative max-w-[1722px] overflow-hidden">
-        <div className="bg-green2 rounded-lg overflow-hidden shadow-lg flex flex-col md:flex-row w-full lg:w-4/5">
+        <div className="bg-green2 rounded-lg overflow-hidden shadow-lg flex flex-col w-full lg:w-4/5">
           <div className="p-6 sm:p-8 lg:w-5/6 text-white" data-aos="fade-right">
             <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">
               Komfort, przestrzeń i doskonała lokalizacja
@@ -39,6 +39,9 @@ export default function Investment() {
                 W okolicy znajdują się sklepy, szkoły, przedszkola, restauracje i tereny spacerowe, co sprawia, że inwestycja zapewnia pełną wygodę codziennego życia.
               </p>
             </div>
+            
+          </div>
+          <div className="pb-6 sm:pb-8 w-full text-white" data-aos="fade-right">
             <div className="flex justify-center">
               <button
                 className="bg-green4 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-md hover:bg-green1 transition"
