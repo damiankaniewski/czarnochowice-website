@@ -74,7 +74,7 @@ export default function Footer() {
           </a>
           <div className="text-center md:text-right">
             <p className="text-signature_text p-0 m-0">
-              Realizacja witryny:
+              Realizacja witryny: Dariusz Cegliński
             </p>
           </div>
         </div>
