@@ -20,23 +20,23 @@ export default function Investment() {
               Komfort, przestrzeń i doskonała lokalizacja
             </h2>
             <p className="text-base sm:text-lg mb-4 sm:mb-6">
-              Nowoczesne, energooszczędne mieszkania w zabudowie bliźniaczej położone w spokojnej części Czarnowchowic – tuż przy granicy z Wieliczką i Krakowem.
-              Inwestycja obejmuje cztery przestronne lokale o powierzchni od 67 do 117 m², z prywatnymi ogródkami lub dużymi tarasami.
-              To idealne miejsce dla osób, które cenią ciszę, bliskość natury i szybki dojazd do miasta.
+              Kameralna inwestycja obejmuje nowoczesne mieszkania z dużymi ogródkami lub przestronnymi tarasami, 
+              położone w spokojnej części Czarnochowic – tuż przy granicy z Wieliczką i Krakowem.
+              To idealne miejsce dla osób szukających komfortu, prywatności oraz szybkiego dojazdu do większych miast.
             </p>
             <div className="mb-4 sm:mb-6">
               <h3 className="text-lg sm:text-xl font-semibold mb-2">
                 Odległości do miast
               </h3>
               <ul className="list-disc list-inside text-base sm:text-lg ml-4 sm:ml-6">
-                <li>Kraków – 25 km (do centrum), 4,5 km (do granic miasta)</li>
-                <li>Niepołomice - 5 km</li>
-                <li>Wieliczka - 6,5 km</li>
+                <li>Kraków – 12 km (do centrum), 2 km (do granic miasta)</li>
+                <li>Wieliczka - około 2 km</li>
+                <li>Dobry dostęp do dróg wylotowych i komunikacji podmiejskiej</li>
               </ul>
             </div>
             <div className="mb-4 sm:mb-6">
               <p className="text-base sm:text-lg">
-                W okolicy znajdują się sklepy, szkoły, przedszkola, restauracje i tereny spacerowe, co sprawia, że inwestycja zapewnia pełną wygodę codziennego życia.
+                W okolicy znajdują się sklepy, szkoły, przedszkola, tereny spacerowe, przystanki komunikacji podmiejskiej oraz spokojna zabudowa jednorodzinna.
               </p>
             </div>
             
@@ -92,8 +92,9 @@ export default function Investment() {
             </h2>
             <div className="mb-4 sm:mb-6">
               <p className="text-base sm:text-lg">
-                Każde mieszkanie posiada niezależne wejście i pełną własność działki.
-                Cały teren inwestycji jest ogrodzony, a wjazd odbywa się przez bramę sterowaną pilotem, co zapewnia poczucie bezpieczeństwa i prywatności.
+                Mieszkania zaprojektowane są tak, aby oferować maksymalną wygodę – posiadają osobne wejścia, 
+                przemyślany układ pomieszczeń, przestrzeń zewnętrzną idealną do wypoczynku 
+                oraz dostęp do ogrodzonego terenu z bramą sterowaną pilotem.
               </p>
             </div>
             <div className="mb-4 sm:mb-6">
@@ -101,18 +102,21 @@ export default function Investment() {
                 Układ pomieszczeń:
               </h3>
                 <ul className="list-disc list-inside text-base sm:text-lg ml-4 sm:ml-6">
-                  <li>Ławy fundamentowe żelbetowe wylewane na mokro</li>
-                  <li>Ściany fundamentowe murowane i zalewane betonem wodoszczelnym W8</li>
-                  <li>Izolacja przeciwwilgociowa dwuskładnikowa i ocieplenie styrodurem gr. 15 cm</li>
-                  <li>Ściany z pustaka ceramicznego Leier 25,12 cm</li>
-                  <li>Dach krokwiowo–płatwiowy, dachówka ceramiczna Creaton Simpla (antracyt)</li>
+                  <li>Ustawne, dobrze doświetlone sypialnie</li>
+                  <li>Duży salon z aneksem kuchennym</li>
+                  <li>Funkcjonalna łazienka</li>
+                  <li>Praktyczny przedpokój z wnękami na szafy</li>
               </ul>
             </div>
             <div className="mb-4 sm:mb-6">
-              <p className="text-base sm:text-lg">
-                Każdemu lokalowi przynależy miejsce postojowe w cenie, z opcją dokupienia kolejnego.
-                Dodatkowym atutem jest duży ogród (ok. 400 m²) lub taras, które zapewniają pełną prywatność i przestrzeń do wypoczynku.
-              </p>
+              <h3 className="text-lg sm:text-xl font-semibold mb-2">
+                Dodatkowo do każdego lokalu:
+              </h3>
+                <ul className="list-disc list-inside text-base sm:text-lg ml-4 sm:ml-6">
+                  <li>Dla mieszkań dolnych – duży ogródek</li>
+                  <li>Dla mieszkań górnych – obszerny taras i poddasze użytkowe</li>
+                  <li>Miejsce postojowe w cenie</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -126,8 +130,7 @@ export default function Investment() {
             </h2>
             <div className="mb-4 sm:mb-6">
               <p className="text-base sm:text-lg">
-                Budynki powstają w technologii tradycyjnej z użyciem ceramiki Leier 25,12 cm, co gwarantuje trwałość, energooszczędność i doskonałą izolację akustyczną.
-                Inwestycja wyróżnia się solidnym wykonaniem oraz dbałością o każdy detal.
+                Budynki powstają w wysokim standardzie, z użyciem trwałych materiałów i nowoczesnych technologii, zapewniających komfort użytkowania oraz niskie koszty eksploatacji.
               </p>
             </div>
             <div className="mb-4 sm:mb-6">
@@ -135,8 +138,8 @@ export default function Investment() {
                 Instalacje:
               </h3>
                 <ul className="list-disc list-inside text-base sm:text-lg ml-4 sm:ml-6">
-                  <li>Ogrzewanie podłogowe w całym domu</li>
-                  <li>Instalacja c.o., ciepłej i zimnej wody użytkowej z piecem gazowym Viessmann Vitodens</li>
+                  <li>Ogrzewanie podłogowe w całym mieszkaniu</li>
+                  <li>Piec gazowy dwufunkcyjny Vissmann Vitodens 050</li>
                   <li>Instalacja elektryczna, w tym trójfazowa</li>
                   <li>Instalacje RTV, Internet, alarmowa i domofonowa</li>
                   <li>Instalacja odgromowa</li>
@@ -147,11 +150,11 @@ export default function Investment() {
                 Wykończenie:
               </h3>
                 <ul className="list-disc list-inside text-base sm:text-lg ml-4 sm:ml-6">
-                  <li>Tynki gipsowe maszynowe</li>
-                  <li>Wylewki cementowe</li>
-                  <li>Stolarka okienna 3-szybowa Ono-Plast / Okno-Plast</li>
-                  <li>Ocieplenie elewacji styropianem 20 cm, tynk Ceresit silikonowo-silikatowy</li>
-                  <li>Podjazdy i dojścia z kostki brukowej</li>
+                  <li>Ławy fundamentowe żelbetowe wylewane na mokro</li>
+                  <li>Konstrukcja dachu krokwiowo-płatwiowa pokryta dachówką ceramiczną Creaton Simpla</li>
+                  <li>Stolarka okienna 3-szybowa Okno-Plast</li>
+                  <li>Ocieplenie elewacji styropianem 20 cm i wykończenie tynkiem silikonowo-silikatowym</li>
+                  <li>Podjazdy wykonane z kostki brukowej</li>
               </ul>
             </div>
           </div>

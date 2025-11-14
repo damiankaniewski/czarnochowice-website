@@ -39,7 +39,7 @@ export default function Header() {
           data-aos="zoom-out"
           data-aos-duration="1000"
         >
-          <Link href="#home" className="font-['titan-one'] hover:text-green1 font-bold lg:text-[32px] md:text-[28px] sm:text-[20px] drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]">
+          <Link href="#home" className="font-['titan-one'] text-white hover:text-green1 font-bold lg:text-[32px] md:text-[28px] sm:text-[20px] drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]">
             Czarnochowice
           </Link>
         </div>

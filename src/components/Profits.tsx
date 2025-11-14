@@ -3,7 +3,7 @@ import {
   FaLeaf,
   FaTree,
   FaCar,
-  FaSolarPanel,
+  FaFire,
   FaLock,
   FaMapMarkerAlt,
   FaMicrochip,
@@ -29,9 +29,9 @@ export default function Profits() {
       delay: 200,
     },
     {
-      icon: <FaSolarPanel className="text-green4 text-5xl" />,
-      title: "Przygotowanie pod fotowoltaikę",
-      description: "Instalacja przystosowana do montażu paneli fotowoltaicznych — energooszczędność w standardzie.",
+      icon: <FaFire className="text-green4 text-5xl" />,
+      title: "Ogrzewanie podłogowe",
+      description: "W każdym mieszkaniu wykonano ogrzewanie podłogowe we wszystkich pomieszczeniach, co zapewnia komfort i energooszczędność.",
       delay: 300,
     },
     {
@@ -44,13 +44,13 @@ export default function Profits() {
       icon: <FaCar className="text-green4 text-5xl" />,
       title: "Własne miejsca postojowe",
       description:
-        "Do każdego mieszkania przypisane jest prywatne miejsce postojowe, z możliwością dodatkowego.",
+        "Do każdego mieszkania przypisane jest prywatne miejsce postojowe.",
       delay: 500,
     },
     {
       icon: <FaMicrochip className="text-green4 text-5xl" />,
       title: "Nowoczesne technologie",
-      description: "W standardzie: piec gazowy Viessmann, instalacje teletechniczne, alarmowe i domofonowe.",
+      description: "W standardzie: piec gazowy Vissmann, instalacje teletechniczne, alarmowe i domofonowe.",
       delay: 600,
     },
     {
