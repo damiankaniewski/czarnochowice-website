@@ -55,6 +55,7 @@ export default function Houses() {
               Number(house.cena / house.metraz).toFixed(2)
             ),
             cena: house.cena ? formatPrice(house.cena) : house.cena,
+            pdf: house.id % 2 === 0 ? "housesPDFs/czarnochowice-oferta-2.pdf" : "housesPDFs/czarnochowice-oferta-1.pdf",
           };
         });
         console.log(combinedData);
@@ -225,7 +226,7 @@ export default function Houses() {
                     )}
                   </div>
                 </div>
-                <div className="mt-4 hidden">
+                <div className="mt-4">
                   <a
                     className="w-full bg-green2 p-4 rounded-xl text-white flex justify-center items-center gap-2 hover:bg-green3 transition-all duration-200"
                     href={house.pdf}
