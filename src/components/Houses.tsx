@@ -44,18 +44,24 @@ export default function Houses() {
           "https://d04z1gp649.execute-api.eu-central-1.amazonaws.com/prod/get-items"
         );
         const data = await response.json();
-        const sortedData = data.body.sort((a: any, b: any) =>
-          a.id.localeCompare(b.id)
-        );
+        const sortedData = data.body.sort((a: any, b: any) =>{
+            const [numA, letterA] = [parseInt(a.numer), a.numer.replace(/[0-9]/g, "")];
+            const [numB, letterB] = [parseInt(b.numer), b.numer.replace(/[0-9]/g, "")];
+
+            if (letterA !== letterB) return letterA.localeCompare(letterB);
+
+            return numA - numB;
+      });
 
         const combinedData = sortedData.map((house: any) => {
+            const floor = house.numer[1];
           return {
             ...house,
             cenaZaMetrKwadratowy: formatPrice(
               Number(house.cena / house.metraz).toFixed(2)
             ),
             cena: house.cena ? formatPrice(house.cena) : house.cena,
-            pdf: house.id % 2 === 0 ? "housesPDFs/czarnochowice-oferta-2.pdf" : "housesPDFs/czarnochowice-oferta-1.pdf",
+            pdf: floor === "A" ? "housesPDFs/czarnochowice-oferta-1.pdf" : "housesPDFs/czarnochowice-oferta-2.pdf",
           };
         });
         console.log(combinedData);
