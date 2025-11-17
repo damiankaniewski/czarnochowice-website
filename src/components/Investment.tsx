@@ -36,7 +36,9 @@ export default function Investment() {
             </div>
             <div className="mb-4 sm:mb-6">
               <p className="text-base sm:text-lg">
-                W okolicy znajdują się sklepy, szkoły, przedszkola, tereny spacerowe, przystanki komunikacji podmiejskiej oraz spokojna zabudowa jednorodzinna.
+                W okolicy znajdują się sklepy, szkoły, przedszkola oraz liczne tereny spacerowe, które sprzyjają aktywnemu wypoczynkowi i relaksowi na świeżym powietrzu. 
+                Wygodę codziennego przemieszczania się zapewniają także bliskie przystanki komunikacji podmiejskiej, umożliwiające szybkie połączenia z pobliskimi miejscowościami i centrum miasta. 
+                Otoczenie uzupełnia spokojna zabudowa jednorodzinna, tworząca kameralny, przyjazny klimat i poczucie bezpieczeństwa.
               </p>
             </div>
             
@@ -122,7 +124,7 @@ export default function Investment() {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row items-center justify-center p-2 sm:px-10 gap-2 relative max-w-[1722px]">
+      <div className="flex flex-col lg:flex-row items-center justify-center pt-2 p-2 sm:px-10 gap-2 relative max-w-[1722px] overflow-hidden">
         <div className="bg-green2 rounded-lg overflow-hidden shadow-lg flex flex-col md:flex-row w-full lg:w-4/5">
           <div className="p-6 sm:p-8 lg:w-5/6 text-white" data-aos="fade-right">
             <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">
@@ -130,7 +132,8 @@ export default function Investment() {
             </h2>
             <div className="mb-4 sm:mb-6">
               <p className="text-base sm:text-lg">
-                Budynki powstają w wysokim standardzie, z użyciem trwałych materiałów i nowoczesnych technologii, zapewniających komfort użytkowania oraz niskie koszty eksploatacji.
+                Budynki powstają w wysokim standardzie, z wykorzystaniem trwałych, starannie dobranych materiałów oraz nowoczesnych technologii, które podnoszą zarówno komfort codziennego użytkowania, jak i bezpieczeństwo mieszkańców. 
+                Całość tworzy harmonijne, funkcjonalne przestrzenie, spełniające oczekiwania współczesnych użytkowników.
               </p>
             </div>
             <div className="mb-4 sm:mb-6">
