@@ -65,7 +65,7 @@ export default function Header() {
             href="#houses"
             className="block text-white hover:text-green1 font-bold drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]"
           >
-            DOMY
+            MIESZKANIA
           </Link>
         </nav>
         <div
@@ -133,7 +133,7 @@ export default function Header() {
             className="text-white text-xl w-full py-5 flex justify-center hover:bg-green2 break-words max-w-full drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]"
             onClick={() => setIsMenuOpen(false)}
           >
-            <p className="break-words max-w-full">Domy</p>
+            <p className="break-words max-w-full">Mieszkania</p>
           </Link>
           <Link
             href="#contact"

@@ -106,7 +106,7 @@ export default function Houses() {
     >
       <div className="w-full text-center pt-10 lg:py-10">
         <p className="text-3xl sm:text-4xl lg:text-6xl text-green4 font-bold break-words max-w-full">
-          DOMY
+          MIESZKANIA
         </p>
       </div>
 
@@ -140,7 +140,7 @@ export default function Houses() {
               >
                 <div>
                   <p className="text-green4 text-xl font-semibold">
-                    Dom nr {house.numer}
+                    Mieszkanie {house.numer}
                   </p>
                   <p className="text-gray-600">
                     Status:{" "}
