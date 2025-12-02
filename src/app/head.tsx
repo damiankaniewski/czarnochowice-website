@@ -1,6 +1,7 @@
 export const metadata = {
   title: "Czarnochowice",
-  description: "Czarnochowice domy na sprzedaż"
+  description: "Czarnochowice domy na sprzedaż",
+  image: "/czarnochowicelogo.png",
 };
 
 export default function Head() {
@@ -8,6 +9,7 @@ export default function Head() {
     <head>
       <title>{metadata.title}</title>
       <meta name="description" content={metadata.description} />
+      <link rel="icon" href={metadata.image}/>
     </head>
   );
 }
